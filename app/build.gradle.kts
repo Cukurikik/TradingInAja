@@ -55,6 +55,15 @@ android {
             // AI Studio.
             signingConfig = signingConfigs.getByName("debugConfig")
         }
+        // Varian khusus Macrobenchmark Fase 8: non-debuggable agar pengukuran frame valid,
+        // ditandatangani kunci debug supaya bisa dipasang di perangkat uji.
+        create("benchmark") {
+            initWith(getByName("release"))
+            signingConfig = signingConfigs.getByName("debugConfig")
+            isDebuggable = false
+            isMinifyEnabled = false
+            matchingFallbacks += listOf("release")
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -104,6 +113,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.profileinstaller)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
     implementation(libs.kotlinx.coroutines.android)

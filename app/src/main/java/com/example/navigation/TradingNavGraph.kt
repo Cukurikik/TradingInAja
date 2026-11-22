@@ -34,10 +34,13 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination
@@ -122,7 +125,7 @@ enum class TopLevelDestination(
 
 private val COMPACT_WIDTH_BREAKPOINT = 600.dp
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
 @Composable
 fun TradingAppShell(
     showTutorial: Boolean = false,
@@ -144,7 +147,12 @@ fun TradingAppShell(
         }
     }
 
-    BoxWithConstraints(modifier = modifier.fillMaxSize()) {
+    BoxWithConstraints(
+        modifier = modifier
+            .fillMaxSize()
+            // Memungkinkan Macrobenchmark menemukan elemen lewat testTag sebagai resource-id.
+            .semantics { testTagsAsResourceId = true }
+    ) {
         val useNavRail = maxWidth >= COMPACT_WIDTH_BREAKPOINT
 
         Scaffold(

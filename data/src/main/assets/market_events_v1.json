@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "transitionMatrix": [
+    [0.940, 0.015, 0.040, 0.005],
+    [0.015, 0.920, 0.045, 0.020],
+    [0.030, 0.030, 0.930, 0.010],
+    [0.010, 0.080, 0.030, 0.880]
+  ],
+  "events": [
+    {
+      "eventId": "EVT_MACRO_RATE_PAUSE",
+      "eventType": "MACRO",
+      "targetScope": "ALL",
+      "targetValue": null,
+      "schedule": {
+        "minTick": 20,
+        "intervalTicks": 52,
+        "intervalOffsetTicks": 16,
+        "triggerProbabilityPerTick": 0.0,
+        "durationTicks": 10,
+        "cooldownTicks": 16,
+        "allowedRegimes": ["BULL", "BEAR", "SIDEWAYS", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.04,
+        "volatilityMultiplier": 1.25,
+        "jumpIntensityMultiplier": 1.15,
+        "jumpMeanLogSizeDelta": 0.0
+      },
+      "headlineId": "Bank Sentral Virtual Pertahankan Suku Bunga Acuan, Beri Sinyal Waspada Inflasi",
+      "headlineEn": "Virtual Central Bank Holds Benchmark Rate Steady While Flagging Inflation Watch",
+      "summaryId": "Komite kebijakan moneter menahan suku bunga pada level saat ini, tetapi membuka opsi pengetatan lanjutan jika tekanan biaya energi bertahan dalam beberapa siklus mendatang.",
+      "summaryEn": "Monetary policymakers kept benchmark rates unchanged but left the door open to further tightening if energy cost pressures persist over upcoming cycles.",
+      "bullCaseId": "Stabilitas suku bunga memberi ruang napas bagi sektor pertumbuhan dan likuiditas pasar untuk pulih bertahap.",
+      "bullCaseEn": "Rate stability gives growth sectors and market liquidity room to stabilize gradually.",
+      "bearCaseId": "Nada hati-hati soal inflasi menandakan biaya pendanaan berisiko tetap tinggi lebih lama dari perkiraan pasar.",
+      "bearCaseEn": "Cautious inflation language signals borrowing costs could stay elevated longer than consensus expects."
+    },
+    {
+      "eventId": "EVT_NSKP_CLOUD_CAPEX",
+      "eventType": "EARNINGS",
+      "targetScope": "SYMBOL",
+      "targetValue": "NSKP",
+      "schedule": {
+        "minTick": 10,
+        "intervalTicks": 42,
+        "intervalOffsetTicks": 2,
+        "triggerProbabilityPerTick": 0.02,
+        "durationTicks": 12,
+        "cooldownTicks": 20,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.16,
+        "volatilityMultiplier": 1.45,
+        "jumpIntensityMultiplier": 1.35,
+        "jumpMeanLogSizeDelta": 0.008
+      },
+      "headlineId": "Nusantara Komputasi Umumkan Ekspansi Pusat Data Besar-Besaran",
+      "headlineEn": "Nusantara Komputasi Unveils Major Regional Data-Center Expansion Plan",
+      "summaryId": "Manajemen NSKP meningkatkan anggaran belanja modal tahun ini untuk membangun klaster komputasi baru, bersamaan dengan laporan pertumbuhan pendapatan berulang kuartalan.",
+      "summaryEn": "NSKP management raised annual capital expenditure guidance to build new compute clusters alongside steady quarterly recurring revenue growth.",
+      "bullCaseId": "Kapasitas baru dapat mempercepat kontrak korporasi jangka panjang dan memperkuat pangsa pasar komputasi.",
+      "bullCaseEn": "Expanded capacity could accelerate long-term enterprise contracts and widen competitive moat.",
+      "bearCaseId": "Lonjakan belanja modal berpotensi menekan arus kas bebas serta margin laba jangka pendek.",
+      "bearCaseEn": "Heavy upfront capital spending may compress near-term free cash flow and operating margins."
+    },
+    {
+      "eventId": "EVT_BPAT_CREDIT_AUDIT",
+      "eventType": "REGULATORY",
+      "targetScope": "SECTOR",
+      "targetValue": "Perbankan",
+      "schedule": {
+        "minTick": 15,
+        "triggerProbabilityPerTick": 0.025,
+        "durationTicks": 10,
+        "cooldownTicks": 28,
+        "allowedRegimes": ["SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": -0.14,
+        "volatilityMultiplier": 1.35,
+        "jumpIntensityMultiplier": 1.1,
+        "jumpMeanLogSizeDelta": 0.0
+      },
+      "headlineId": "Regulator Terapkan Uji Ketahanan Cadangan Kredit Baru untuk Sektor Perbankan",
+      "headlineEn": "Regulator Introduces Stricter Credit-Buffer Stress Tests Across Banking Sector",
+      "summaryId": "Otoritas keuangan meminta bank besar meninjau ulang rasio pencadangan kredit produktif guna mengantisipasi perlambatan siklikal di sektor riil.",
+      "summaryEn": "Financial supervisors asked major lenders to review loan-loss provisioning ratios ahead of potential cyclical slowdowns in commercial credit.",
+      "bullCaseId": "Pengetatan standar justru memperkuat kepercayaan deposan dan ketahanan neraca perbankan jangka panjang.",
+      "bullCaseEn": "Tighter buffers bolster depositor confidence and strengthen long-term bank balance sheets.",
+      "bearCaseId": "Kewajiban pencadangan lebih tinggi berisiko menahan penyaluran kredit baru dan ekspansi laba bersih.",
+      "bearCaseEn": "Higher reserve requirements could slow fresh loan growth and trim near-term net earnings."
+    },
+    {
+      "eventId": "EVT_PSRY_HARVEST_LOGISTICS",
+      "eventType": "SUPPLY_SHOCK",
+      "targetScope": "SYMBOL",
+      "targetValue": "PSRY",
+      "schedule": {
+        "minTick": 12,
+        "triggerProbabilityPerTick": 0.022,
+        "durationTicks": 11,
+        "cooldownTicks": 24,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": -0.09,
+        "volatilityMultiplier": 1.30,
+        "jumpIntensityMultiplier": 1.0,
+        "jumpMeanLogSizeDelta": 0.0
+      },
+      "headlineId": "Biaya Distribusi Pangan Berfluktuasi di Tengah Pergeseran Musim Panen",
+      "headlineEn": "Food Distribution Costs Fluctuate Amid Shifting Regional Harvest Windows",
+      "summaryId": "PSRY melaporkan kenaikan tarif logistik antarpulau selama dua pekan terakhir, sementara permintaan ritel kebutuhan pokok tetap stabil.",
+      "summaryEn": "PSRY reported higher inter-island freight costs over the past two weeks even as core retail staple demand remained resilient.",
+      "bullCaseId": "Permintaan pangan inelastis memungkinkan perusahaan meneruskan sebagian biaya tanpa kehilangan volume.",
+      "bullCaseEn": "Inelastic staple demand may allow gradual price pass-through without losing customer volume.",
+      "bearCaseId": "Kenaikan ongkos angkut berpotensi menggerus margin kotor jika penyesuaian harga tertunda.",
+      "bearCaseEn": "Rising freight costs could squeeze gross margins if retail price adjustments lag."
+    },
+    {
+      "eventId": "EVT_SDKT_GRID_INCENTIVE",
+      "eventType": "REGULATORY",
+      "targetScope": "SYMBOL",
+      "targetValue": "SDKT",
+      "schedule": {
+        "minTick": 8,
+        "triggerProbabilityPerTick": 0.024,
+        "durationTicks": 12,
+        "cooldownTicks": 26,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.18,
+        "volatilityMultiplier": 1.50,
+        "jumpIntensityMultiplier": 1.40,
+        "jumpMeanLogSizeDelta": 0.006
+      },
+      "headlineId": "Rancangan Insentif Transmisi Energi Terbarukan Masuk Tahap Pembahasan Akhir",
+      "headlineEn": "Draft Renewable Grid-Access Incentive Enters Final Policy Deliberation",
+      "summaryId": "Skema tarif baru untuk pembangkit surya skala utilitas masih diperdebatkan terkait porsi subsidi investasi awal dan batas kapasitas penyerapan jaringan.",
+      "summaryEn": "Proposed tariff structures for utility-scale solar face active debate over upfront investment credits and grid-absorption caps.",
+      "bullCaseId": "Kepastian tarif berpeluang mempercepat realisasi proyek pipa SDKT yang selama ini tertunda.",
+      "bullCaseEn": "Tariff clarity could unlock SDKT's delayed utility-scale project backlog.",
+      "bearCaseId": "Ketentuan batas kapasitas dalam draf final berpotensi membatasi potensi pendapatan puncak.",
+      "bearCaseEn": "Proposed capacity caps in the final text might limit peak revenue upside."
+    },
+    {
+      "eventId": "EVT_GRDC_VALIDATOR_UPGRADE",
+      "eventType": "TECH_BREAKTHROUGH",
+      "targetScope": "SYMBOL",
+      "targetValue": "GRDC",
+      "schedule": {
+        "minTick": 6,
+        "intervalTicks": 46,
+        "intervalOffsetTicks": 28,
+        "triggerProbabilityPerTick": 0.022,
+        "durationTicks": 10,
+        "cooldownTicks": 22,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.22,
+        "volatilityMultiplier": 1.55,
+        "jumpIntensityMultiplier": 1.60,
+        "jumpMeanLogSizeDelta": 0.010
+      },
+      "headlineId": "Pembaruan Protokol GarudaChain Tingkatkan Throughput, Sebagian Validator Minta Jeda Uji",
+      "headlineEn": "GarudaChain Protocol Upgrade Boosts Throughput as Some Validators Urge Extended Testing",
+      "summaryId": "Rilis kandidat v4.2 menawarkan pemrosesan blok dua kali lebih cepat, namun beberapa operator node besar meminta waktu verifikasi tambahan sebelum aktivasi penuh.",
+      "summaryEn": "Release candidate v4.2 promises doubled block throughput, though several major node operators requested extended verification before full activation.",
+      "bullCaseId": "Adopsi pembaruan yang mulus dapat menarik pengembang dApp baru dan menaikkan utilitas jaringan.",
+      "bullCaseEn": "Smooth upgrade rollout could attract fresh dApp builders and increase on-chain utility.",
+      "bearCaseId": "Perbedaan sikap antar-validator dapat menunda aktivasi atau memicu volatilitas sementara di pasar.",
+      "bearCaseEn": "Validator disagreement risks rollout delays and heightened short-term market turbulence."
+    },
+    {
+      "eventId": "EVT_KPSW_BRIDGE_AUDIT",
+      "eventType": "SECURITY_INCIDENT",
+      "targetScope": "CATEGORY",
+      "targetValue": "CRYPTO",
+      "schedule": {
+        "minTick": 18,
+        "triggerProbabilityPerTick": 0.018,
+        "durationTicks": 9,
+        "cooldownTicks": 30,
+        "allowedRegimes": ["SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": -0.32,
+        "volatilityMultiplier": 1.75,
+        "jumpIntensityMultiplier": 1.85,
+        "jumpMeanLogSizeDelta": -0.015
+      },
+      "headlineId": "Audit Independen Temukan Celah Konfigurasi pada Jembatan Likuiditas DeFi",
+      "headlineEn": "Independent Audit Flags Configuration Anomaly in DeFi Cross-Chain Liquidity Bridge",
+      "summaryId": "Tim keamanan protokol segera membekukan sementara modul jembatan setelah temuan audit rutin; tidak ada laporan kehilangan dana, tetapi penarikan sempat melambat.",
+      "summaryEn": "Protocol security teams paused bridge routing after a routine audit finding; no user loss was confirmed, though withdrawal queues briefly lengthened.",
+      "bullCaseId": "Deteksi dini sebelum eksploitasi menunjukkan prosedur keamanan berjalan dan dana inti tetap aman.",
+      "bullCaseEn": "Proactive detection prior to any exploit shows security controls work and core pools remain intact.",
+      "bearCaseId": "Jeda penarikan sementara berpotensi memicu perpindahan likuiditas keluar dari token utilitas.",
+      "bearCaseEn": "Temporary withdrawal throttling can trigger liquidity flight across smaller DeFi tokens."
+    },
+    {
+      "eventId": "EVT_XVMG_RESERVE_FLOW",
+      "eventType": "MACRO",
+      "targetScope": "SYMBOL",
+      "targetValue": "XVMG",
+      "schedule": {
+        "minTick": 14,
+        "triggerProbabilityPerTick": 0.024,
+        "durationTicks": 12,
+        "cooldownTicks": 24,
+        "allowedRegimes": ["BEAR", "CRISIS", "SIDEWAYS"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.12,
+        "volatilityMultiplier": 1.25,
+        "jumpIntensityMultiplier": 1.20,
+        "jumpMeanLogSizeDelta": 0.003
+      },
+      "headlineId": "Cadangan Logam Mulia Institusional Naik saat Imbal Hasil Riil Bergerak Tak Menentu",
+      "headlineEn": "Institutional Precious-Metal Reserves Rise Amid Uncertain Real-Yield Swings",
+      "summaryId": "Laporan mingguan menunjukkan akumulasi bertahap kontrak emas virtual oleh manajer cadangan, meski penguatan mata uang cadangan membatasi laju reli.",
+      "summaryEn": "Weekly reserve disclosures show steady accumulation of virtual gold contracts even as reserve-currency firmness caps sharp breakouts.",
+      "bullCaseId": "Permintaan lindung nilai dari institusi sering menopang harga komoditas logam mulia saat ketidakpastian naik.",
+      "bullCaseEn": "Institutional hedging demand often supports precious metals when macro uncertainty rises.",
+      "bearCaseId": "Kenaikan imbal hasil obligasi virtual dapat membuat aset tanpa bunga seperti emas kehilangan daya tarik.",
+      "bearCaseEn": "Rebounding virtual bond yields could reduce the appeal of non-yielding safe-haven assets."
+    },
+    {
+      "eventId": "EVT_MBSO_STRAIT_SHIPPING",
+      "eventType": "SUPPLY_SHOCK",
+      "targetScope": "SYMBOL",
+      "targetValue": "MBSO",
+      "schedule": {
+        "minTick": 10,
+        "triggerProbabilityPerTick": 0.025,
+        "durationTicks": 10,
+        "cooldownTicks": 22,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.14,
+        "volatilityMultiplier": 1.50,
+        "jumpIntensityMultiplier": 1.35,
+        "jumpMeanLogSizeDelta": 0.005
+      },
+      "headlineId": "Antrean Tanker di Selat Utama Picu Spekulasi Pasokan Energi Jangka Pendek",
+      "headlineEn": "Tanker Congestion in Key Maritime Strait Sparks Short-Term Energy Supply Debate",
+      "summaryId": "Gangguan cuaca di jalur pelayaran energi memperlambat jadwal bongkar muat selama 72 jam, sementara stok strategis wilayah utama masih berada di rata-rata 5 tahun.",
+      "summaryEn": "Weather disruptions slowed crude tanker turnaround for 72 hours, though regional strategic inventories remain near their five-year average.",
+      "bullCaseId": "Hambatan pengiriman dapat memperketat pasokan spot dan mendorong premi harga energi jangka pendek.",
+      "bullCaseEn": "Shipping bottlenecks may tighten near-term spot availability and support energy premiums.",
+      "bearCaseId": "Stok strategis yang memadai dan melemahnya permintaan manufaktur dapat meredam lonjakan harga.",
+      "bearCaseEn": "Ample strategic buffers and softer industrial demand could quickly cap any temporary price spike."
+    },
+    {
+      "eventId": "EVT_FX_TRADE_BALANCE",
+      "eventType": "MACRO",
+      "targetScope": "CATEGORY",
+      "targetValue": "FOREX",
+      "schedule": {
+        "minTick": 12,
+        "intervalTicks": 44,
+        "intervalOffsetTicks": 20,
+        "triggerProbabilityPerTick": 0.015,
+        "durationTicks": 9,
+        "cooldownTicks": 20,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.0,
+        "volatilityMultiplier": 1.40,
+        "jumpIntensityMultiplier": 1.15,
+        "jumpMeanLogSizeDelta": 0.0
+      },
+      "headlineId": "Surplus Neraca Dagang Menyempit, Aliran Modal Valuta Asing Terpecah",
+      "headlineEn": "Trade Surplus Narrows as Cross-Border Currency Flows Diverge",
+      "summaryId": "Data ekspor-impor kuartalan mencatat kenaikan impor bahan baku industri melebihi ekspektasi, memicu penyesuaian posisi antar pelaku pasar valas.",
+      "summaryEn": "Quarterly trade figures showed industrial raw-material imports exceeding consensus, prompting currency-desk rebalancing.",
+      "bullCaseId": "Kenaikan impor bahan baku kerap menjadi sinyal awal ekspansi produksi industri domestik.",
+      "bullCaseEn": "Higher raw-material imports often precede domestic industrial output expansion.",
+      "bearCaseId": "Penyempitan surplus dagang berpotensi melemahkan dukungan neraca transaksi berjalan terhadap mata uang lokal.",
+      "bearCaseEn": "A narrower trade surplus can weaken current-account support for the domestic virtual currency."
+    },
+    {
+      "eventId": "EVT_IKN30_REBALANCE",
+      "eventType": "INDEX_REVIEW",
+      "targetScope": "CATEGORY",
+      "targetValue": "INDEX",
+      "schedule": {
+        "minTick": 30,
+        "intervalTicks": 60,
+        "intervalOffsetTicks": 8,
+        "triggerProbabilityPerTick": 0.0,
+        "durationTicks": 8,
+        "cooldownTicks": 20,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.05,
+        "volatilityMultiplier": 1.25,
+        "jumpIntensityMultiplier": 1.10,
+        "jumpMeanLogSizeDelta": 0.0
+      },
+      "headlineId": "Tinjauan Berkala Bobot IKN30 Jadwalkan Penyesuaian Alokasi Sektor Teknologi & Bank",
+      "headlineEn": "IKN30 Periodic Weight Review Schedules Technology and Banking Reallocation",
+      "summaryId": "Komite indeks mengumumkan rotasi bobot konstituen kuartalan yang akan berlaku efektif pada sesi pembukaan siklus berikutnya.",
+      "summaryEn": "The index committee announced its quarterly constituent weight rotation taking effect at the upcoming cycle open.",
+      "bullCaseId": "Arus penyesuaian dana pasif dapat meningkatkan likuiditas dan minat beli di saham berkapitalisasi besar.",
+      "bullCaseEn": "Passive fund rebalancing flows can boost liquidity and demand across index heavyweights.",
+      "bearCaseId": "Penyeimbangan ulang sering memicu fluktuasi sementara saat dana institusional melepas bobot lama.",
+      "bearCaseEn": "Index rebalancing often creates temporary churn as institutional funds trim outgoing weights."
+    },
+    {
+      "eventId": "EVT_STARTUP_TECH_RUMOR",
+      "eventType": "RUMOR",
+      "targetScope": "SECTOR",
+      "targetValue": "Teknologi",
+      "schedule": {
+        "minTick": 5,
+        "triggerProbabilityPerTick": 0.028,
+        "durationTicks": 8,
+        "cooldownTicks": 18,
+        "allowedRegimes": ["BULL", "SIDEWAYS", "BEAR", "CRISIS"]
+      },
+      "effect": {
+        "annualDriftDelta": 0.02,
+        "volatilityMultiplier": 1.60,
+        "jumpIntensityMultiplier": 1.45,
+        "jumpMeanLogSizeDelta": 0.0
+      },
+      "headlineId": "Rumor Konsolidasi Infrastruktur AI Lokal Beredar di Kalangan Analis Teknologi",
+      "headlineEn": "Unconfirmed Local AI-Infrastructure Consolidation Rumors Circulate Among Tech Analysts",
+      "summaryId": "Sumber industri menyebut adanya pembicaraan awal kemitraan lisensi chip dan komputasi awan, namun belum ada pernyataan resmi dari perusahaan terkait.",
+      "summaryEn": "Industry chatter points to early licensing and cloud-capacity talks, though no listed firm has issued formal confirmation.",
+      "bullCaseId": "Sinergi infrastruktur dapat menurunkan biaya komputasi per unit dan mempercepat peluncuran produk.",
+      "bullCaseEn": "Shared infrastructure could lower unit compute costs and speed up commercial rollouts.",
+      "bearCaseId": "Rumor yang belum terkonfirmasi kerap berbalik cepat jika negosiasi tidak menghasilkan kesepakatan.",
+      "bearCaseEn": "Unconfirmed market rumors frequently unwind sharply if talks fail to materialize."
+    }
+  ]
+}

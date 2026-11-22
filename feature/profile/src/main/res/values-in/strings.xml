@@ -1,0 +1,14 @@
+<resources>
+    <string name="profile_title">Profil</string>
+    <string name="profile_placeholder_subtitle">Profil simulasi offline-first, progres belajar, tutorial interaktif, dan pengaturan tema tampilan.</string>
+    <string name="profile_phase_badge">SIMULATOR VIRTUAL</string>
+    <string name="profile_career_summary_title">Peringkat Karier: Lv.%1$d · %2$s</string>
+    <string name="profile_learning_progress_summary">Materi selesai: %1$d/%2$d · Latihan baca candle lulus: %3$d</string>
+    <string name="profile_replay_tutorial">Ulangi Tutorial Interaktif</string>
+    <string name="profile_theme_section_title">Tema Tampilan</string>
+    <string name="profile_theme_section_subtitle">Disimpan lokal menggunakan DataStore Preferences.</string>
+    <string name="theme_mode_system">Ikuti Sistem</string>
+    <string name="theme_mode_light">Terang</string>
+    <string name="theme_mode_dark">Gelap (Slate)</string>
+    <string name="theme_mode_amoled">AMOLED Hitam Murni</string>
+</resources>

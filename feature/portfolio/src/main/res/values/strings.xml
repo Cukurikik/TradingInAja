@@ -1,0 +1,77 @@
+<resources>
+    <string name="portfolio_title">Portfolio</string>
+    <string name="portfolio_loading">Loading portfolio…</string>
+    <string name="portfolio_total_equity">Total Virtual Equity</string>
+    <string name="portfolio_cash_balance">Cash Balance</string>
+    <string name="portfolio_reserved_cash">Reserved in Orders</string>
+    <string name="portfolio_positions_value">Positions Equity</string>
+    <string name="portfolio_unrealized_pnl">Unrealized PnL</string>
+    <string name="portfolio_realized_pnl">Realized PnL (Net)</string>
+    <string name="portfolio_total_fees">Commissions Paid</string>
+    <string name="portfolio_total_borrow_fees">Borrow / Funding Fees</string>
+    <string name="portfolio_equity_curve_title">Equity Curve</string>
+    <string name="portfolio_margin_health_title">Margin &amp; Liquidation Guard</string>
+    <string name="portfolio_margin_status_healthy">Healthy</string>
+    <string name="portfolio_margin_status_call">Margin Call (&lt;= 110%%)</string>
+    <string name="portfolio_margin_status_liq">Forced Liquidation (&lt;= 100%%)</string>
+    <string name="portfolio_margin_level_label">Margin Level</string>
+    <string name="portfolio_margin_used_label">Leveraged Margin Used</string>
+    <string name="portfolio_margin_no_leverage">Spot Only (No Liquidation Risk)</string>
+    <string name="portfolio_margin_explanation_healthy">Margin Level = Equity / Leveraged Margin. Margin Call triggers at 110%%; Forced Liquidation closes losing margin/short positions at 100%%.</string>
+    <string name="portfolio_margin_explanation_call">Margin Call active! Your equity is within 10%% of your locked leveraged margin. Close or reduce positions to avoid forced liquidation at 100%%.</string>
+    <string name="portfolio_liquidation_notice">Forced Liquidation (%1$s): closed %2$d %3$s at %4$s (Margin Level was %.1f%%) to protect account solvency.</string>
+    <string name="portfolio_metrics_title">Performance &amp; Risk Metrics</string>
+    <string name="portfolio_metric_max_drawdown">Max Drawdown (Curr: %.2f%%)</string>
+    <string name="portfolio_metric_win_rate">Win Rate (%1$dW / %2$dL)</string>
+    <string name="portfolio_metric_risk_reward">Risk / Reward Ratio</string>
+    <string name="portfolio_metric_sharpe">Simple Sharpe (Ann.)</string>
+    <string name="portfolio_metric_gross_exposure">Gross Exposure</string>
+    <string name="portfolio_metric_net_exposure">Net Exposure</string>
+    <string name="portfolio_metric_na">—</string>
+    <string name="portfolio_tab_positions">Positions (%1$d)</string>
+    <string name="portfolio_tab_orders">Open Orders (%1$d)</string>
+    <string name="portfolio_tab_history">Trade History (%1$d)</string>
+    <string name="portfolio_empty_positions">No open positions yet. Start trading an asset from the Trade tab.</string>
+    <string name="portfolio_empty_orders">No active pending limit, stop, or OCO orders.</string>
+    <string name="portfolio_empty_history">No executed trades yet.</string>
+    <string name="portfolio_pos_side_long">LONG %1$dx</string>
+    <string name="portfolio_pos_side_short">SHORT %1$dx</string>
+    <string name="portfolio_pos_units">%1$d units</string>
+    <string name="portfolio_pos_avg_entry">Avg Entry: %1$s</string>
+    <string name="portfolio_pos_mark_price">Mark: %1$s</string>
+    <string name="portfolio_pos_margin_locked">Margin: %1$s · Exposure: %2$.1f%%</string>
+    <string name="portfolio_pos_liq_price">Est. Liq: %1$s</string>
+    <string name="portfolio_pos_borrow_fee">Borrow Fee: %1$s</string>
+    <string name="portfolio_pos_trade_cta">Trade</string>
+    <string name="portfolio_cancel_order">Cancel</string>
+    <string name="portfolio_fill_details">Exec %1$s · Fee %2$s · Slip %3$d bps</string>
+    <string name="portfolio_fill_tick">Tick #%1$d · %2$s</string>
+    <string name="portfolio_fill_liquidation_badge">LIQUIDATED</string>
+    <string name="portfolio_reset_button">Reset Portfolio</string>
+    <string name="portfolio_reset_dialog_title">Reset Virtual Portfolio?</string>
+    <string name="portfolio_reset_dialog_body">All open positions, pending orders, liquidation records, and trade history will be cleared, and virtual cash will reset to %1$s.</string>
+    <string name="portfolio_reset_confirm">Reset</string>
+    <string name="portfolio_reset_cancel">Keep</string>
+    <string name="portfolio_percent_format">%1$s%.2f%%</string>
+
+    <string name="portfolio_post_mortem_banner_title">Automatic Post-Mortem Review</string>
+    <string name="portfolio_post_mortem_banner_body">%1$d losing exits analyzed · No SL: %2$d · Over-leveraged: %3$d · Disciplined SL: %4$d</string>
+    <string name="portfolio_post_mortem_tag">Post-Mortem: %1$s</string>
+    <string name="portfolio_post_mortem_meta">Loss vs base capital: %1$.2f%% · Leverage: %2$dx · Stop-Loss: %3$s</string>
+    <string name="portfolio_post_mortem_sl_yes">Attached</string>
+    <string name="portfolio_post_mortem_sl_no">Missing</string>
+    <string name="pm_cause_liq_title">Forced Liquidation Hit</string>
+    <string name="pm_cause_liq_coach">Your margin level fell to 100%% or below. Reduce leverage and place a Stop-Loss safely above liquidation price.</string>
+    <string name="pm_cause_leverage_title">Over-Leveraged Position</string>
+    <string name="pm_cause_leverage_coach">Using leverage magnified adverse volatility plus borrow fees. Practice sizing at 1x spot before scaling up.</string>
+    <string name="pm_cause_no_sl_title">Closed Without Stop-Loss</string>
+    <string name="pm_cause_no_sl_coach">No protective Stop-Loss or OCO bracket was attached. Define your exit price before opening any trade.</string>
+    <string name="pm_cause_oversized_title">Risk Exceeded 2%% Rule</string>
+    <string name="pm_cause_oversized_coach">This loss exceeded 2%% of starting capital. Narrow position units in Learn Mode\'s 1–2% calculator.</string>
+    <string name="pm_cause_concentration_title">Excess Single-Asset Exposure</string>
+    <string name="pm_cause_concentration_coach">Position value exceeded 40%% concentration. Diversify across sectors and asset classes.</string>
+    <string name="pm_cause_slippage_title">High Liquidity Slippage</string>
+    <string name="pm_cause_slippage_coach">Order size vs tick liquidity caused wide slippage. Consider Limit orders or splitting fills.</string>
+    <string name="pm_cause_controlled_title">Disciplined Stop-Loss Exit</string>
+    <string name="pm_cause_controlled_coach">Good risk execution! You respected your Stop-Loss and capped loss within 2%% of capital.</string>
+</resources>

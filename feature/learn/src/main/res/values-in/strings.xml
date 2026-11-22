@@ -1,0 +1,72 @@
+<resources>
+    <string name="learn_title">Belajar</string>
+    <string name="learn_loading">Menyiapkan pusat belajar…</string>
+    <string name="learn_career_level_header">Level %1$d · %2$s</string>
+    <string name="learn_career_privileges">Leverage Maks %1$dx · Short Selling: %2$s</string>
+    <string name="learn_short_unlocked">Aktif</string>
+    <string name="learn_short_locked">Terkunci (Lv.3+)</string>
+    <string name="learn_replay_tutorial">Tutorial</string>
+    <string name="learn_competency_principle">Kenaikan level karier ditentukan oleh misi kompetensi manajemen risiko, bukan sekadar saldo virtual.</string>
+    <string name="learn_tab_missions">Misi</string>
+    <string name="learn_tab_risk_free">Latihan Bebas Risiko</string>
+    <string name="learn_tab_lessons">Materi &amp; Glosarium</string>
+    <string name="learn_missions_next_level_title">Misi Kompetensi menuju Lv.%1$d (%2$s)</string>
+    <string name="learn_missions_max_level_title">Level Puncak Karier Tercapai</string>
+    <string name="learn_missions_max_level_body">Seluruh kompetensi risiko inti hingga Level 5 (Hedge Fund) telah terpenuhi. Pertahankan Sharpe ratio dan disiplin drawdown di setiap rezim pasar.</string>
+    <string name="learn_risk_free_banner">Mode Belajar Bebas Risiko: latihan dan kalkulator di sini tidak mengurangi atau mengubah saldo virtual Karier Anda.</string>
+    <string name="learn_drill_candle_title">Latihan Membaca Candle</string>
+    <string name="learn_drill_candle_score">Latihan lulus: %1$d</string>
+    <string name="learn_drill_candle_prompt">Amati batang candle paling kanan beserta sumbu (wick) OHLC-nya. Interpretasi pasar mana yang paling tepat?</string>
+    <string name="learn_drill_correct">Tepat! %1$s</string>
+    <string name="learn_drill_incorrect">Belum tepat — inti pola: %1$s</string>
+    <string name="learn_drill_next">Skenario Candle Berikutnya</string>
+    <string name="learn_pattern_bullish_momentum">Badan Bullish Kuat (Pembeli Dominan)</string>
+    <string name="learn_pattern_bearish_wick">Sumbu Atas Panjang (Penolakan di Puncak)</string>
+    <string name="learn_pattern_hammer_reversal">Sumbu Bawah Panjang / Hammer (Serapan Permintaan)</string>
+    <string name="learn_pattern_doji_indecision">Sumbu Lebar Badan Tipis (Keraguan Volatilitas Tinggi)</string>
+    <string name="learn_pattern_bullish_momentum_desc">Harga dibuka dekat titik terendah dan ditutup kuat mendekati puncak candle.</string>
+    <string name="learn_pattern_bearish_wick_desc">Harga sempat melambung tinggi namun penjual menekan balik hingga ditutup turun.</string>
+    <string name="learn_pattern_hammer_reversal_desc">Tekanan jual di awal periode diserap kembali oleh pembeli hingga ditutup naik.</string>
+    <string name="learn_pattern_doji_indecision_desc">Sumbu atas dan bawah sama panjang dengan Open hampir sama dengan Close menandakan tarik-menarik kuat.</string>
+    <string name="learn_sizing_title">Simulator Ukuran Posisi (Aturan 1–2%)</string>
+    <string name="learn_sizing_risk_slider">Target Risiko per Trade: %1$.1f%% dari Ekuitas</string>
+    <string name="learn_sizing_entry_label">Harga Masuk (vRp)</string>
+    <string name="learn_sizing_sl_label">Harga Stop-Loss (vRp)</string>
+    <string name="learn_sizing_recommended_units">Rekomendasi Ukuran Maks: %1$d unit</string>
+    <string name="learn_sizing_budget_detail">Risiko Stop-Loss Aktual: %1$s (%2$.2f%% ekuitas)</string>
+    <string name="learn_sizing_rule_ok">Ukuran disiplin: mematuhi aturan perlindungan modal 1–2%.</string>
+    <string name="learn_sizing_rule_warning">Peringatan: merisikokan &gt; 2% pada satu trade mempercepat penurunan ekuitas.</string>
+    <string name="learn_lesson_level_tag">Lv.%1$d+</string>
+    <string name="learn_lesson_mark_done">Tandai Materi Selesai</string>
+    <string name="learn_lesson_completed_badge">Selesai</string>
+    <string name="learn_glossary_title">Glosarium Istilah Trading</string>
+    <string name="learn_glossary_subtitle">Ketuk istilah mana saja untuk melihat penjelasan ringkas dan tips praktiknya.</string>
+    <string name="learn_post_mortem_title">Ringkasan Evaluasi Post-Mortem</string>
+    <string name="learn_post_mortem_empty">Belum ada penutupan trade rugi. Evaluasi post-mortem otomatis akan muncul di Riwayat Portofolio setiap kali ada trade rugi.</string>
+    <string name="learn_post_mortem_stats">Trade rugi dianalisis: %1$d · Tanpa Stop-Loss: %2$d · Over-leverage: %3$d · SL Disiplin: %4$d</string>
+
+    <string name="mission_basics_lesson">Selesaikan materi: Dasar Spread, Komisi &amp; Stop-Loss</string>
+    <string name="mission_min_trades">Lakukan minimal %1$d transaksi simulasi</string>
+    <string name="mission_diversify_assets">Transaksikan minimal %1$d aset fiktif berbeda</string>
+    <string name="mission_use_stop_loss">Pasang Stop-Loss atau OCO SL pada minimal %1$d transaksi</string>
+    <string name="mission_max_drawdown">Jaga Max Drawdown &lt;= %1$.0f%%</string>
+    <string name="mission_risk_lesson">Selesaikan materi: Aturan Risiko 1–2% per Trade</string>
+    <string name="mission_candle_drills">Lulus %1$d latihan Membaca Candle di Mode Belajar</string>
+    <string name="mission_limit_stop_fills">Tereksekusi %1$d order Limit atau Stop</string>
+    <string name="mission_disciplined_risk">Pasang %1$d order dengan risiko Stop-Loss &lt;= 2%% ekuitas</string>
+    <string name="mission_risk_reward">Capai rasio Risk / Reward &gt;= %1$.1f</string>
+    <string name="mission_margin_lesson">Selesaikan materi: Margin &amp; Anti-Likuidasi</string>
+    <string name="mission_short_hedge">Eksekusi %1$d transaksi Short atau Lindung Nilai</string>
+    <string name="mission_zero_liquidations">Pertahankan 0 kali likuidasi paksa</string>
+    <string name="mission_diversify_classes">Diversifikasi transaksi ke %1$d kelas aset berbeda</string>
+    <string name="mission_win_rate">Pertahankan Win Rate &gt;= %1$.0f%%</string>
+
+    <string name="lesson_basics_title">1. Bid-Ask Spread, Komisi &amp; Stop-Loss</string>
+    <string name="lesson_basics_body">Setiap eksekusi menanggung selisih bid-ask dan komisi simulasi (15 bps). Selalu tentukan harga keluar Stop-Loss SEBELUM masuk agar koreksi wajar tidak membengkak jadi rugi besar.</string>
+    <string name="lesson_risk_title">2. Aturan Ukuran Posisi 1–2%</string>
+    <string name="lesson_risk_body">Membatasi risiko Stop-Loss sebesar 1–2% ekuitas dilakukan dengan membagi anggaran risiko terhadap jarak |Entry − StopLoss|. Gabungkan Limit dengan bracket OCO agar Risk/Reward selalu terukur.</string>
+    <string name="lesson_candle_title">3. Membaca Candle &amp; Rezim Pasar</string>
+    <string name="lesson_candle_body">Sumbu candlestick menunjukkan perlawanan pembeli/penjual dalam satu tick, sementara Rezim Pasar (Bull, Bear, Sideways, Crisis) mengubah volatilitas dan kecenderungan tren.</string>
+    <string name="lesson_margin_title">4. Leverage, Margin Call &amp; Biaya Pinjam</string>
+    <string name="lesson_margin_body">Posisi Leverage dan Short menanggung biaya pinjam per tick dan memicu Margin Call pada 110% serta Likuidasi Paksa pada 100%. Gunakan ukuran kecil dan Stop-Loss jauh di atas harga likuidasi.</string>
+</resources>

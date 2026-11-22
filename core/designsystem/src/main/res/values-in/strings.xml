@@ -1,0 +1,59 @@
+<resources>
+    <string name="disclaimer_simulation_only">Simulasi — bukan saran investasi. Seluruh harga dan dana bersifat virtual.</string>
+    <string name="chart_empty_state">Belum ada data candle yang tersedia.</string>
+    <string name="chart_reset_view">Terkini</string>
+    <string name="chart_crosshair_hint">Ketuk atau tekan-tahan grafik untuk inspeksi OHLC · Cubit untuk zoom</string>
+    <string name="chart_ohlcv_format">O %1$s  H %2$s  L %3$s  C %4$s  Vol %5$s</string>
+    <string name="equity_chart_empty">Belum ada riwayat ekuitas yang tercatat.</string>
+    <string name="equity_chart_peak">Puncak %1$s</string>
+    <string name="equity_chart_low">Terendah %1$s</string>
+
+    <string name="career_level_1_name">Trader Pemula</string>
+    <string name="career_level_2_name">Trader Aktif</string>
+    <string name="career_level_3_name">Trader Profesional</string>
+    <string name="career_level_4_name">Manajer Dana</string>
+    <string name="career_level_5_name">Hedge Fund</string>
+
+    <string name="term_tooltip_cd">Jelaskan %1$s</string>
+    <string name="term_tooltip_close">Mengerti</string>
+
+    <string name="term_spread_title">Bid-Ask Spread</string>
+    <string name="term_spread_desc">Selisih antara harga Bid (beli pasar) tertinggi dan Ask (jual pasar) terendah pada tick tertentu. Order Market langsung menanggung biaya spread ini.</string>
+    <string name="term_spread_tip">Tips latihan: Aset likuid seperti BPAT atau XVMG memiliki spread tipis, sedangkan KPSW berspread lebih lebar.</string>
+
+    <string name="term_slippage_title">Slippage</string>
+    <string name="term_slippage_desc">Pergeseran harga eksekusi nyata dibanding harga acuan ketika ukuran order Market atau Stop cukup besar terhadap likuiditas tick saat itu.</string>
+    <string name="term_slippage_tip">Tips latihan: Pecah ukuran order besar atau gunakan Limit order pada aset likuiditas rendah agar slippage tetap kecil.</string>
+
+    <string name="term_stop_loss_title">Stop-Loss (SL)</string>
+    <string name="term_stop_loss_desc">Harga pemicu keluar otomatis yang menutup posisi ketika harga bergerak berlawanan, membatasi kerugian maksimal sebelum emosi mengambil alih.</string>
+    <string name="term_stop_loss_tip">Tips latihan: Tentukan posisi Stop-Loss SEBELUM masuk posisi, bukan setelah rugi terlanjur membengkak.</string>
+
+    <string name="term_oco_title">OCO Bracket (TP / SL)</string>
+    <string name="term_oco_desc">One-Cancels-the-Other memasangkan order limit Take-Profit dan pemicu Stop-Loss sekaligus. Jika salah satu tereksekusi, pasangannya batal otomatis.</string>
+    <string name="term_oco_tip">Tips latihan: Aktifkan OCO saat membuka posisi agar rencana Risk/Reward Anda terkunci otomatis sejak tick pertama.</string>
+
+    <string name="term_leverage_title">Leverage</string>
+    <string name="term_leverage_desc">Pengali eksposur (mis. 3x atau 5x) memakai margin awal lebih kecil. Keuntungan MAUPUN kerugian berlipat sama besar, disertai biaya pinjam per tick.</string>
+    <string name="term_leverage_tip">Tips latihan: Leverage tinggi membuat fluktuasi kecil berujung likuidasi. Kuasai aturan risiko di akun 1x spot lebih dulu.</string>
+
+    <string name="term_margin_call_title">Margin Call &amp; Likuidasi</string>
+    <string name="term_margin_call_desc">Margin Level = Ekuitas / Margin Leverage. Pada ≤ 110% terjadi Margin Call; pada ≤ 100%, posisi berleverage yang rugi ditutup paksa otomatis.</string>
+    <string name="term_margin_call_tip">Tips latihan: Selalu pasang Stop-Loss jauh di sisi aman sebelum harga menyentuh estimasi harga likuidasi.</string>
+
+    <string name="term_drawdown_title">Max Drawdown</string>
+    <string name="term_drawdown_desc">Persentase penurunan terdalam dari puncak ekuitas tertinggi portofolio ke titik lembah berikutnya sebelum pulih.</string>
+    <string name="term_drawdown_tip">Tips latihan: Penurunan 50% butuh kenaikan +100% hanya untuk balik modal. Menjaga max drawdown di bawah 10–15% sangat vital.</string>
+
+    <string name="term_risk_reward_title">Rasio Risk / Reward</string>
+    <string name="term_risk_reward_desc">Perbandingan rata-rata profit trade menang terhadap rata-rata rugi trade kalah. Rasio 2,0 berarti profit rata-rata 2x lebih besar dari kerugiannya.</string>
+    <string name="term_risk_reward_tip">Tips latihan: Dengan Risk/Reward ≥ 1,5, strategi tetap bisa bertumbuh meski win rate hanya sekitar 45%.</string>
+
+    <string name="term_candle_title">Candlestick (OHLC)</string>
+    <string name="term_candle_desc">Satu batang candle meringkas harga Open, High, Low, dan Close per periode. Sumbu (wick) panjang menandakan penolakan harga, sedangkan badan penuh menunjukkan kendali arah.</string>
+    <string name="term_candle_tip">Tips latihan: Selalu gabungkan pembacaan candle dengan Rezim Pasar yang sedang aktif sebelum mengambil keputusan.</string>
+
+    <string name="term_sizing_title">Aturan Risiko 1–2%</string>
+    <string name="term_sizing_desc">Batasi risiko Stop-Loss maksimal 1–2% dari total ekuitas per transaksi: Jumlah Unit = (Ekuitas × %Risiko) / |Harga Masuk − StopLoss|.</string>
+    <string name="term_sizing_tip">Tips latihan: Bahkan jika terkena Stop-Loss 10 kali berturut-turut dengan risiko 1%, sekitar 90% modal Anda tetap utuh.</string>
+</resources>

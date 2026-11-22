@@ -1,0 +1,14 @@
+<resources>
+    <string name="profile_title">Profile</string>
+    <string name="profile_placeholder_subtitle">Offline-first simulation profile, learning milestones, interactive tutorial, and theme settings.</string>
+    <string name="profile_phase_badge">VIRTUAL SIMULATOR</string>
+    <string name="profile_career_summary_title">Career Rank: Lv.%1$d · %2$s</string>
+    <string name="profile_learning_progress_summary">Lessons completed: %1$d/%2$d · Candle reading drills passed: %3$d</string>
+    <string name="profile_replay_tutorial">Replay Interactive Tutorial</string>
+    <string name="profile_theme_section_title">Appearance Theme</string>
+    <string name="profile_theme_section_subtitle">Saved locally with DataStore Preferences.</string>
+    <string name="theme_mode_system">Follow System</string>
+    <string name="theme_mode_light">Light</string>
+    <string name="theme_mode_dark">Dark (Slate)</string>
+    <string name="theme_mode_amoled">AMOLED Pure Black</string>
+</resources>

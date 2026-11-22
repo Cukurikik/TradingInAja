@@ -1,0 +1,34 @@
+naming:
+  FunctionNaming:
+    active: true
+    ignoreAnnotated: ['Composable', 'Preview']
+
+style:
+  MagicNumber:
+    active: true
+    ignoreNumbers: ['-1', '0', '1', '2', '10', '100', '1000']
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: true
+    ignoreConstantDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotation: true
+    ignoreNamedArgument: true
+    ignoreEnums: true
+    ignoreRanges: true
+    ignoreAnnotated: ['Composable', 'Preview']
+  UnusedPrivateFunction:
+    active: true
+    ignoreAnnotated: ['Preview']
+
+complexity:
+  LongMethod:
+    active: true
+    allowedLines: 100
+    ignoreAnnotated: ['Composable', 'Preview']
+  LongParameterList:
+    active: true
+    allowedFunctionParameters: 8
+    allowedConstructorParameters: 8
+    ignoreDefaultParameters: true
+    ignoreDataClasses: true
+    ignoreAnnotated: ['Composable', 'Inject']

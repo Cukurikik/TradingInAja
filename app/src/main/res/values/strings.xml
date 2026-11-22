@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tradingin Aja</string>
+    <string name="nav_market">Market</string>
+    <string name="nav_trade">Trade</string>
+    <string name="nav_portfolio">Portfolio</string>
+    <string name="nav_learn">Learn</string>
+    <string name="nav_profile">Profile</string>
+    <string name="top_bar_virtual_badge">VIRTUAL SIM</string>
+    <string name="tutorial_step_badge">Tutorial %1$d / %2$d</string>
+    <string name="tutorial_skip">Skip</string>
+    <string name="tutorial_back">Back</string>
+    <string name="tutorial_next">Next</string>
+    <string name="tutorial_finish">Start Simulating</string>
+    <string name="tutorial_step_1_title">100% Virtual Capital, Zero Real Risk</string>
+    <string name="tutorial_step_1_body">Welcome to Tradingin Aja! You start with virtual vRp 100,000,000. All assets are fictional, and there is no real-money deposit or withdrawal. Pause the market anytime to think calmly.</string>
+    <string name="tutorial_step_2_title">Read Charts &amp; Ambiguous News</string>
+    <string name="tutorial_step_2_body">Watch candlestick wicks, watchlist movers, and News feed headlines. News reflects evolving Market Regimes (Bull, Bear, Sideways, Crisis) — interpret carefully instead of chasing hype.</string>
+    <string name="tutorial_step_3_title">Respect the 1–2% Rule &amp; Stop-Loss</string>
+    <string name="tutorial_step_3_body">Before confirming any trade, inspect Bid-Ask Spread, Slippage, Commission, and attach an OCO Stop-Loss so one bad move never risks more than 1–2% of your equity.</string>
+    <string name="tutorial_step_4_title">Learn From Automatic Post-Mortems</string>
+    <string name="tutorial_step_4_body">Check Portfolio for Drawdown, Risk/Reward, and Margin Health. Every losing exit generates an automatic Post-Mortem showing what happened and how to improve.</string>
+    <string name="tutorial_step_5_title">Unlock Career Ranks via Competency</string>
+    <string name="tutorial_step_5_body">Advance through 5 Career Levels by completing risk missions, Candle Reading drills, and risk-free sizing practice in Learn. You can replay this tutorial anytime from Learn or Profile.</string>
+    <string name="tutorial_try_market">Preview Market Tab</string>
+    <string name="tutorial_try_trade">Preview Order Ticket</string>
+    <string name="tutorial_try_portfolio">Preview Portfolio</string>
+    <string name="tutorial_try_learn">Open Learn Mode</string>
+</resources>

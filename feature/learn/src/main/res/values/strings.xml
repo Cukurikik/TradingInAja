@@ -1,0 +1,72 @@
+<resources>
+    <string name="learn_title">Learn</string>
+    <string name="learn_loading">Preparing learning hub…</string>
+    <string name="learn_career_level_header">Level %1$d · %2$s</string>
+    <string name="learn_career_privileges">Max Leverage %1$dx · Short Selling: %2$s</string>
+    <string name="learn_short_unlocked">Unlocked</string>
+    <string name="learn_short_locked">Locked (Lv.3+)</string>
+    <string name="learn_replay_tutorial">Tutorial</string>
+    <string name="learn_competency_principle">Career levels unlock via risk-management competency missions, not account balance alone.</string>
+    <string name="learn_tab_missions">Missions</string>
+    <string name="learn_tab_risk_free">Risk-Free Practice</string>
+    <string name="learn_tab_lessons">Lessons &amp; Glossary</string>
+    <string name="learn_missions_next_level_title">Competency Missions for Lv.%1$d (%2$s)</string>
+    <string name="learn_missions_max_level_title">Peak Career Rank Reached</string>
+    <string name="learn_missions_max_level_body">You have proven all core risk competencies up to Level 5 (Hedge Fund). Keep refining Sharpe ratio and drawdown discipline across regimes.</string>
+    <string name="learn_risk_free_banner">Risk-Free Learn Mode: drills and calculators here never risk or alter your Career virtual balance.</string>
+    <string name="learn_drill_candle_title">Candle Reading Drill</string>
+    <string name="learn_drill_candle_score">Completed drills: %1$d</string>
+    <string name="learn_drill_candle_prompt">Inspect the rightmost signal candle and its OHLC wicks. Which market interpretation matches best?</string>
+    <string name="learn_drill_correct">Spot on! %1$s</string>
+    <string name="learn_drill_incorrect">Not quite — key insight: %1$s</string>
+    <string name="learn_drill_next">Next Candle Scenario</string>
+    <string name="learn_pattern_bullish_momentum">Strong Bullish Body (Buyers in Control)</string>
+    <string name="learn_pattern_bearish_wick">Long Upper Wick Rejection (Selling Pressure Above)</string>
+    <string name="learn_pattern_hammer_reversal">Long Lower Wick Hammer (Demand Absorption)</string>
+    <string name="learn_pattern_doji_indecision">Wide Wicks Small Body (High-Volatility Indecision)</string>
+    <string name="learn_pattern_bullish_momentum_desc">Price opened near the low and closed near the high with a full bullish body.</string>
+    <string name="learn_pattern_bearish_wick_desc">Buyers pushed sharply higher intraday, then sellers rejected the peak into a red close.</string>
+    <string name="learn_pattern_hammer_reversal_desc">Deep selling early in the tick was absorbed, pushing close back into the upper range.</string>
+    <string name="learn_pattern_doji_indecision_desc">Large upper and lower wicks around nearly equal open/close signal equilibrium before a breakout.</string>
+    <string name="learn_sizing_title">1–2% Position Sizing Simulator</string>
+    <string name="learn_sizing_risk_slider">Target Risk per Trade: %1$.1f%% of Equity</string>
+    <string name="learn_sizing_entry_label">Entry Price (vRp)</string>
+    <string name="learn_sizing_sl_label">Stop-Loss Price (vRp)</string>
+    <string name="learn_sizing_recommended_units">Recommended Max Size: %1$d units</string>
+    <string name="learn_sizing_budget_detail">Actual Stop-Loss Risk: %1$s (%2$.2f%% of equity)</string>
+    <string name="learn_sizing_rule_ok">Disciplined sizing: within the 1–2% capital protection rule.</string>
+    <string name="learn_sizing_rule_warning">Warning: risking over 2% on one trade can rapidly compound drawdowns.</string>
+    <string name="learn_lesson_level_tag">Lv.%1$d+</string>
+    <string name="learn_lesson_mark_done">Mark Lesson Completed</string>
+    <string name="learn_lesson_completed_badge">Completed</string>
+    <string name="learn_glossary_title">Interactive Trading Glossary</string>
+    <string name="learn_glossary_subtitle">Tap any term to inspect its clear definition and practical rule of thumb.</string>
+    <string name="learn_post_mortem_title">Post-Mortem Review Digest</string>
+    <string name="learn_post_mortem_empty">No losing closing trades recorded yet. Automatic post-mortem coaching will appear in Portfolio History whenever a trade closes at a loss.</string>
+    <string name="learn_post_mortem_stats">Losing exits analyzed: %1$d · Without Stop-Loss: %2$d · Over-leveraged: %3$d · Disciplined SL exits: %4$d</string>
+
+    <string name="mission_basics_lesson">Complete lesson: Spread, Fee &amp; Stop-Loss Basics</string>
+    <string name="mission_min_trades">Execute at least %1$d simulated trades</string>
+    <string name="mission_diversify_assets">Trade at least %1$d distinct fictional assets</string>
+    <string name="mission_use_stop_loss">Attach or place Stop-Loss on at least %1$d trades</string>
+    <string name="mission_max_drawdown">Keep Max Drawdown &lt;= %1$.0f%%</string>
+    <string name="mission_risk_lesson">Complete lesson: 1–2% Risk Sizing Rule</string>
+    <string name="mission_candle_drills">Pass %1$d Candle Reading drills in Risk-Free Practice</string>
+    <string name="mission_limit_stop_fills">Fill %1$d Limit or Stop orders</string>
+    <string name="mission_disciplined_risk">Place %1$d trades with Stop-Loss risk &lt;= 2%% equity</string>
+    <string name="mission_risk_reward">Achieve Risk / Reward ratio &gt;= %1$.1f</string>
+    <string name="mission_margin_lesson">Complete lesson: Margin &amp; Anti-Liquidation</string>
+    <string name="mission_short_hedge">Execute %1$d Short or Hedging trades</string>
+    <string name="mission_zero_liquidations">Maintain 0 forced liquidations</string>
+    <string name="mission_diversify_classes">Diversify trades across %1$d asset classes</string>
+    <string name="mission_win_rate">Maintain Win Rate &gt;= %1$.0f%%</string>
+
+    <string name="lesson_basics_title">1. Bid-Ask Spread, Fees &amp; Stop-Loss</string>
+    <string name="lesson_basics_body">Every trade pays a bid-ask spread and simulation commission (15 bps). Always define your Stop-Loss exit BEFORE entering so a routine pullback never turns into an uncontrolled loss.</string>
+    <string name="lesson_risk_title">2. The 1–2% Position Sizing Rule</string>
+    <string name="lesson_risk_body">Risking 1–2% of equity per Stop-Loss means dividing your risk budget by |Entry − StopLoss|. Pairing Limit entries with OCO Take-Profit / Stop-Loss keeps Risk/Reward skewed in your favor.</string>
+    <string name="lesson_candle_title">3. Reading Candles &amp; Market Regimes</string>
+    <string name="lesson_candle_body">Candlestick wicks reveal where buyers or sellers fought back, while Market Regimes (Bull, Bear, Sideways, Crisis) shift overall volatility and trend behavior.</string>
+    <string name="lesson_margin_title">4. Leverage, Margin Call &amp; Borrow Fees</string>
+    <string name="lesson_margin_body">Leverage and Short Selling deduct daily borrow fees per tick and trigger Margin Call at 110% and Forced Liquidation at 100%. Use small size and firm Stop-Losses.</string>
+</resources>

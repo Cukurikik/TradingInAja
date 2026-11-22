@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tradingin Aja</string>
+    <string name="nav_market">Pasar</string>
+    <string name="nav_trade">Transaksi</string>
+    <string name="nav_portfolio">Portofolio</string>
+    <string name="nav_learn">Belajar</string>
+    <string name="nav_profile">Profil</string>
+    <string name="top_bar_virtual_badge">SIMULASI VIRTUAL</string>
+    <string name="tutorial_step_badge">Tutorial %1$d / %2$d</string>
+    <string name="tutorial_skip">Lewati</string>
+    <string name="tutorial_back">Kembali</string>
+    <string name="tutorial_next">Lanjut</string>
+    <string name="tutorial_finish">Mulai Simulasi</string>
+    <string name="tutorial_step_1_title">100% Uang Virtual, Nol Risiko Nyata</string>
+    <string name="tutorial_step_1_body">Selamat datang di Tradingin Aja! Anda memulai dengan dana virtual vRp 100.000.000. Seluruh aset bersifat fiktif tanpa deposit atau penarikan uang nyata. Anda bebas menjeda pasar kapan saja.</string>
+    <string name="tutorial_step_2_title">Baca Grafik &amp; Berita Ambigu</string>
+    <string name="tutorial_step_2_body">Amati pola candlestick, daftar pantau, dan feed Berita. Berita mencerminkan perubahan Rezim Pasar (Bull, Bear, Sideways, Crisis) untuk ditafsirkan secara tenang tanpa FOMO.</string>
+    <string name="tutorial_step_3_title">Terapkan Aturan 1–2% &amp; Stop-Loss</string>
+    <string name="tutorial_step_3_body">Sebelum konfirmasi order, periksa Spread, Slippage, Komisi, lalu pasang bracket OCO Stop-Loss agar satu transaksi rugi tidak pernah melampaui 1–2% ekuitas.</string>
+    <string name="tutorial_step_4_title">Belajar dari Post-Mortem Otomatis</string>
+    <string name="tutorial_step_4_body">Pantau Drawdown, Risk/Reward, dan Margin Level di Portofolio. Setiap trade rugi mendapat diagnosis Post-Mortem otomatis untuk memperbaiki kebiasaan trading.</string>
+    <string name="tutorial_step_5_title">Buka Level Karier Berbasis Kompetensi</string>
+    <string name="tutorial_step_5_body">Naiki 5 Level Karier lewat misi manajemen risiko, latihan baca candle, dan simulator bebas risiko di tab Belajar. Tutorial ini dapat diulang kapan saja dari Belajar atau Profil.</string>
+    <string name="tutorial_try_market">Lihat Tab Pasar</string>
+    <string name="tutorial_try_trade">Lihat Tiket Order</string>
+    <string name="tutorial_try_portfolio">Lihat Portofolio</string>
+    <string name="tutorial_try_learn">Buka Mode Belajar</string>
+</resources>

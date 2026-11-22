@@ -1,0 +1,77 @@
+<resources>
+    <string name="portfolio_title">Portofolio</string>
+    <string name="portfolio_loading">Memuat portofolio…</string>
+    <string name="portfolio_total_equity">Total Ekuitas Virtual</string>
+    <string name="portfolio_cash_balance">Saldo Tunai</string>
+    <string name="portfolio_reserved_cash">Terkunci di Order</string>
+    <string name="portfolio_positions_value">Ekuitas Posisi</string>
+    <string name="portfolio_unrealized_pnl">PnL Belum Terealisasi</string>
+    <string name="portfolio_realized_pnl">PnL Terealisasi (Bersih)</string>
+    <string name="portfolio_total_fees">Total Komisi Simulasi</string>
+    <string name="portfolio_total_borrow_fees">Biaya Pinjam / Funding</string>
+    <string name="portfolio_equity_curve_title">Kurva Ekuitas</string>
+    <string name="portfolio_margin_health_title">Pelindung Margin &amp; Likuidasi</string>
+    <string name="portfolio_margin_status_healthy">Sehat</string>
+    <string name="portfolio_margin_status_call">Margin Call (&lt;= 110%%)</string>
+    <string name="portfolio_margin_status_liq">Likuidasi Paksa (&lt;= 100%%)</string>
+    <string name="portfolio_margin_level_label">Level Margin</string>
+    <string name="portfolio_margin_used_label">Margin Leverage Terpakai</string>
+    <string name="portfolio_margin_no_leverage">Spot Murni (Tanpa Risiko Likuidasi)</string>
+    <string name="portfolio_margin_explanation_healthy">Margin Level = Ekuitas / Margin Leverage. Margin Call aktif pada 110%%; Likuidasi Paksa menutup posisi rugi secara otomatis di 100%%.</string>
+    <string name="portfolio_margin_explanation_call">Margin Call aktif! Ekuitas hampir menyentuh margin terpakai. Kurangi eksposur posisi sebelum mencapai ambang likuidasi paksa 100%%.</string>
+    <string name="portfolio_liquidation_notice">Likuidasi Paksa (%1$s): menutup %2$d %3$s di %4$s (Margin Level %.1f%%) untuk menjaga solvabilitas akun.</string>
+    <string name="portfolio_metrics_title">Metrik Performa &amp; Risiko</string>
+    <string name="portfolio_metric_max_drawdown">Max Drawdown (Saat ini: %.2f%%)</string>
+    <string name="portfolio_metric_win_rate">Win Rate (%1$dM / %2$dK)</string>
+    <string name="portfolio_metric_risk_reward">Rasio Risk / Reward</string>
+    <string name="portfolio_metric_sharpe">Sharpe Sederhana (Tahunan)</string>
+    <string name="portfolio_metric_gross_exposure">Eksposur Kotor</string>
+    <string name="portfolio_metric_net_exposure">Eksposur Bersih</string>
+    <string name="portfolio_metric_na">—</string>
+    <string name="portfolio_tab_positions">Posisi (%1$d)</string>
+    <string name="portfolio_tab_orders">Order Aktif (%1$d)</string>
+    <string name="portfolio_tab_history">Riwayat Trade (%1$d)</string>
+    <string name="portfolio_empty_positions">Belum ada posisi terbuka. Mulai transaksi dari tab Transaksi.</string>
+    <string name="portfolio_empty_orders">Tidak ada order limit, stop, atau OCO yang menunggu.</string>
+    <string name="portfolio_empty_history">Belum ada riwayat eksekusi trade.</string>
+    <string name="portfolio_pos_side_long">LONG %1$dx</string>
+    <string name="portfolio_pos_side_short">SHORT %1$dx</string>
+    <string name="portfolio_pos_units">%1$d unit</string>
+    <string name="portfolio_pos_avg_entry">Rata-rata Masuk: %1$s</string>
+    <string name="portfolio_pos_mark_price">Harga Kini: %1$s</string>
+    <string name="portfolio_pos_margin_locked">Margin: %1$s · Eksposur: %2$.1f%%</string>
+    <string name="portfolio_pos_liq_price">Est. Likuidasi: %1$s</string>
+    <string name="portfolio_pos_borrow_fee">Biaya Pinjam: %1$s</string>
+    <string name="portfolio_pos_trade_cta">Kelola</string>
+    <string name="portfolio_cancel_order">Batalkan</string>
+    <string name="portfolio_fill_details">Eksekusi %1$s · Komisi %2$s · Slip %3$d bps</string>
+    <string name="portfolio_fill_tick">Tick #%1$d · %2$s</string>
+    <string name="portfolio_fill_liquidation_badge">LIKUIDASI</string>
+    <string name="portfolio_reset_button">Reset Portofolio</string>
+    <string name="portfolio_reset_dialog_title">Reset Portofolio Virtual?</string>
+    <string name="portfolio_reset_dialog_body">Seluruh posisi terbuka, order aktif, catatan likuidasi, dan riwayat trade akan dihapus, lalu kas virtual kembali ke %1$s.</string>
+    <string name="portfolio_reset_confirm">Reset</string>
+    <string name="portfolio_reset_cancel">Batal</string>
+    <string name="portfolio_percent_format">%1$s%.2f%%</string>
+
+    <string name="portfolio_post_mortem_banner_title">Evaluasi Post-Mortem Otomatis</string>
+    <string name="portfolio_post_mortem_banner_body">%1$d trade rugi dianalisis · Tanpa SL: %2$d · Over-leverage: %3$d · SL Disiplin: %4$d</string>
+    <string name="portfolio_post_mortem_tag">Post-Mortem: %1$s</string>
+    <string name="portfolio_post_mortem_meta">Rugi vs modal awal: %1$.2f%% · Leverage: %2$dx · Stop-Loss: %3$s</string>
+    <string name="portfolio_post_mortem_sl_yes">Terpasang</string>
+    <string name="portfolio_post_mortem_sl_no">Tidak Ada</string>
+    <string name="pm_cause_liq_title">Terkena Likuidasi Paksa</string>
+    <string name="pm_cause_liq_coach">Margin level menyentuh ≤ 100%%. Turunkan leverage dan pasang Stop-Loss jauh di sisi aman sebelum titik likuidasi.</string>
+    <string name="pm_cause_leverage_title">Leverage Terlalu Tinggi</string>
+    <string name="pm_cause_leverage_coach">Leverage memperbesar kerugian sekaligus biaya pinjam per tick. Latih konsistensi di akun 1x spot terlebih dahulu.</string>
+    <string name="pm_cause_no_sl_title">Masuk Tanpa Stop-Loss</string>
+    <string name="pm_cause_no_sl_coach">Tidak ada Stop-Loss atau bracket OCO yang melindungi posisi ini. Selalu tetapkan batas rugi sebelum konfirmasi order.</string>
+    <string name="pm_cause_oversized_title">Risiko Melebihi Aturan 2%%</string>
+    <string name="pm_cause_oversized_coach">Kerugian melampaui 2%% modal awal. Gunakan simulator 1–2% di tab Belajar untuk mengecilkan jumlah unit.</string>
+    <string name="pm_cause_concentration_title">Konsentrasi Aset Berlebih</string>
+    <string name="pm_cause_concentration_coach">Nilai posisi melampaui 40%% portofolio. Sebar risiko ke beberapa sektor atau kelas aset berbeda.</string>
+    <string name="pm_cause_slippage_title">Slippage Likuiditas Tinggi</string>
+    <string name="pm_cause_slippage_coach">Ukuran order relatif besar terhadap likuiditas tick memicu slippage lebar. Pertimbangkan Limit order atau pecah eksekusi.</string>
+    <string name="pm_cause_controlled_title">Eksekusi Stop-Loss Disiplin</string>
+    <string name="pm_cause_controlled_coach">Manajemen risiko yang baik! Anda menaati Stop-Loss dan menjaga kerugian tetap di bawah 2%% modal.</string>
+</resources>

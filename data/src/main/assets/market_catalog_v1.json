@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "symbol": "NSKP",
+      "name": "Nusantara Komputasi Tbk",
+      "sector": "Teknologi",
+      "category": "STOCK",
+      "initialPrice": 4500.0,
+      "annualVolatility": 0.38,
+      "annualDrift": 0.11,
+      "liquidityTier": "HIGH",
+      "baseVolumePerTick": 14500,
+      "priceModel": "GBM",
+      "jumpParams": {
+        "jumpIntensityPerYear": 18.0,
+        "jumpMeanLogSize": 0.005,
+        "jumpStdDevLogSize": 0.032
+      },
+      "garchParams": {
+        "omegaWeight": 0.08,
+        "alpha": 0.12,
+        "beta": 0.80
+      }
+    },
+    {
+      "symbol": "BPAT",
+      "name": "Bank Pelita Artha Tbk",
+      "sector": "Perbankan",
+      "category": "STOCK",
+      "initialPrice": 8200.0,
+      "annualVolatility": 0.22,
+      "annualDrift": 0.08,
+      "liquidityTier": "VERY_HIGH",
+      "baseVolumePerTick": 22000,
+      "priceModel": "GBM"
+    },
+    {
+      "symbol": "PSRY",
+      "name": "Pangan Sejahtera Raya Tbk",
+      "sector": "Konsumer",
+      "category": "STOCK",
+      "initialPrice": 2850.0,
+      "annualVolatility": 0.18,
+      "annualDrift": 0.06,
+      "liquidityTier": "HIGH",
+      "baseVolumePerTick": 16000,
+      "priceModel": "GBM"
+    },
+    {
+      "symbol": "SDKT",
+      "name": "Surya Daya Khatulistiwa Tbk",
+      "sector": "Energi Terbarukan",
+      "category": "STOCK",
+      "initialPrice": 1650.0,
+      "annualVolatility": 0.44,
+      "annualDrift": 0.09,
+      "liquidityTier": "MEDIUM",
+      "baseVolumePerTick": 9800,
+      "priceModel": "GBM",
+      "jumpParams": {
+        "jumpIntensityPerYear": 20.0,
+        "jumpMeanLogSize": -0.004,
+        "jumpStdDevLogSize": 0.038
+      },
+      "garchParams": {
+        "omegaWeight": 0.07,
+        "alpha": 0.13,
+        "beta": 0.80
+      }
+    },
+    {
+      "symbol": "GRDC",
+      "name": "GarudaChain",
+      "sector": "Layer-1 Fiktif",
+      "category": "CRYPTO",
+      "initialPrice": 125000.0,
+      "annualVolatility": 0.78,
+      "annualDrift": 0.14,
+      "liquidityTier": "HIGH",
+      "baseVolumePerTick": 18500,
+      "priceModel": "GBM",
+      "jumpParams": {
+        "jumpIntensityPerYear": 32.0,
+        "jumpMeanLogSize": 0.008,
+        "jumpStdDevLogSize": 0.055
+      },
+      "garchParams": {
+        "omegaWeight": 0.06,
+        "alpha": 0.16,
+        "beta": 0.78
+      }
+    },
+    {
+      "symbol": "KPSW",
+      "name": "KopiSwap Token",
+      "sector": "DeFi / Utilitas",
+      "category": "CRYPTO",
+      "initialPrice": 18400.0,
+      "annualVolatility": 0.95,
+      "annualDrift": 0.10,
+      "liquidityTier": "LOW_MEDIUM",
+      "baseVolumePerTick": 6400,
+      "priceModel": "GBM",
+      "jumpParams": {
+        "jumpIntensityPerYear": 40.0,
+        "jumpMeanLogSize": -0.006,
+        "jumpStdDevLogSize": 0.065
+      },
+      "garchParams": {
+        "omegaWeight": 0.05,
+        "alpha": 0.18,
+        "beta": 0.77
+      }
+    },
+    {
+      "symbol": "XVMG",
+      "name": "Emas Murni Virtual",
+      "sector": "Logam Mulia",
+      "category": "COMMODITY",
+      "initialPrice": 1350000.0,
+      "annualVolatility": 0.15,
+      "annualDrift": 0.05,
+      "liquidityTier": "VERY_HIGH",
+      "baseVolumePerTick": 24000,
+      "priceModel": "GBM",
+      "isSafeHaven": true
+    },
+    {
+      "symbol": "MBSO",
+      "name": "Minyak Bumi Samudra",
+      "sector": "Energi",
+      "category": "COMMODITY",
+      "initialPrice": 920000.0,
+      "annualVolatility": 0.34,
+      "annualDrift": 0.03,
+      "liquidityTier": "HIGH",
+      "baseVolumePerTick": 15200,
+      "priceModel": "MEAN_REVERSION_OU",
+      "meanReversionParams": {
+        "reversionSpeedPerYear": 2.2,
+        "longTermMeanPrice": 920000.0
+      }
+    },
+    {
+      "symbol": "VUD/VRP",
+      "name": "Dolar Aether / vRupiah",
+      "sector": "Pasangan Mata Uang Fiktif",
+      "category": "FOREX",
+      "initialPrice": 15500.0,
+      "annualVolatility": 0.11,
+      "annualDrift": 0.0,
+      "liquidityTier": "VERY_HIGH",
+      "baseVolumePerTick": 38000,
+      "priceModel": "MEAN_REVERSION_OU",
+      "meanReversionParams": {
+        "reversionSpeedPerYear": 2.8,
+        "longTermMeanPrice": 15500.0
+      }
+    },
+    {
+      "symbol": "IKN30",
+      "name": "Indeks Komposit Nusantara 30",
+      "sector": "Indeks Komposit",
+      "category": "INDEX",
+      "initialPrice": 6800.0,
+      "annualVolatility": 0.16,
+      "annualDrift": 0.075,
+      "liquidityTier": "VERY_HIGH",
+      "baseVolumePerTick": 42000,
+      "priceModel": "GBM"
+    }
+  ],
+  "correlationPairs": [
+    { "assetA": "IKN30", "assetB": "BPAT", "correlation": 0.66 },
+    { "assetA": "IKN30", "assetB": "NSKP", "correlation": 0.61 },
+    { "assetA": "IKN30", "assetB": "PSRY", "correlation": 0.53 },
+    { "assetA": "IKN30", "assetB": "SDKT", "correlation": 0.49 },
+    { "assetA": "IKN30", "assetB": "GRDC", "correlation": 0.26 },
+    { "assetA": "IKN30", "assetB": "KPSW", "correlation": 0.20 },
+    { "assetA": "IKN30", "assetB": "XVMG", "correlation": -0.27 },
+    { "assetA": "IKN30", "assetB": "MBSO", "correlation": 0.19 },
+    { "assetA": "IKN30", "assetB": "VUD/VRP", "correlation": -0.24 },
+    { "assetA": "BPAT", "assetB": "NSKP", "correlation": 0.57 },
+    { "assetA": "BPAT", "assetB": "PSRY", "correlation": 0.48 },
+    { "assetA": "BPAT", "assetB": "SDKT", "correlation": 0.46 },
+    { "assetA": "BPAT", "assetB": "GRDC", "correlation": 0.28 },
+    { "assetA": "BPAT", "assetB": "KPSW", "correlation": 0.23 },
+    { "assetA": "BPAT", "assetB": "XVMG", "correlation": -0.25 },
+    { "assetA": "BPAT", "assetB": "MBSO", "correlation": 0.17 },
+    { "assetA": "BPAT", "assetB": "VUD/VRP", "correlation": -0.22 },
+    { "assetA": "NSKP", "assetB": "PSRY", "correlation": 0.44 },
+    { "assetA": "NSKP", "assetB": "SDKT", "correlation": 0.44 },
+    { "assetA": "NSKP", "assetB": "GRDC", "correlation": 0.38 },
+    { "assetA": "NSKP", "assetB": "KPSW", "correlation": 0.34 },
+    { "assetA": "NSKP", "assetB": "XVMG", "correlation": -0.25 },
+    { "assetA": "NSKP", "assetB": "MBSO", "correlation": 0.16 },
+    { "assetA": "NSKP", "assetB": "VUD/VRP", "correlation": -0.20 },
+    { "assetA": "PSRY", "assetB": "SDKT", "correlation": 0.35 },
+    { "assetA": "PSRY", "assetB": "GRDC", "correlation": 0.14 },
+    { "assetA": "PSRY", "assetB": "KPSW", "correlation": 0.11 },
+    { "assetA": "PSRY", "assetB": "XVMG", "correlation": -0.19 },
+    { "assetA": "PSRY", "assetB": "MBSO", "correlation": 0.14 },
+    { "assetA": "PSRY", "assetB": "VUD/VRP", "correlation": -0.17 },
+    { "assetA": "SDKT", "assetB": "GRDC", "correlation": 0.26 },
+    { "assetA": "SDKT", "assetB": "KPSW", "correlation": 0.23 },
+    { "assetA": "SDKT", "assetB": "XVMG", "correlation": -0.21 },
+    { "assetA": "SDKT", "assetB": "MBSO", "correlation": 0.30 },
+    { "assetA": "SDKT", "assetB": "VUD/VRP", "correlation": -0.12 },
+    { "assetA": "GRDC", "assetB": "KPSW", "correlation": 0.79 },
+    { "assetA": "GRDC", "assetB": "XVMG", "correlation": -0.18 },
+    { "assetA": "GRDC", "assetB": "MBSO", "correlation": 0.07 },
+    { "assetA": "GRDC", "assetB": "VUD/VRP", "correlation": -0.08 },
+    { "assetA": "KPSW", "assetB": "XVMG", "correlation": -0.16 },
+    { "assetA": "KPSW", "assetB": "MBSO", "correlation": 0.05 },
+    { "assetA": "KPSW", "assetB": "VUD/VRP", "correlation": -0.07 },
+    { "assetA": "XVMG", "assetB": "MBSO", "correlation": -0.11 },
+    { "assetA": "XVMG", "assetB": "VUD/VRP", "correlation": 0.08 },
+    { "assetA": "MBSO", "assetB": "VUD/VRP", "correlation": 0.04 }
+  ]
+}

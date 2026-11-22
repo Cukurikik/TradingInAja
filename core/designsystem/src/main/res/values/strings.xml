@@ -1,0 +1,59 @@
+<resources>
+    <string name="disclaimer_simulation_only">Simulation — not investment advice. All prices and funds are virtual.</string>
+    <string name="chart_empty_state">No candle data available yet.</string>
+    <string name="chart_reset_view">Live</string>
+    <string name="chart_crosshair_hint">Tap or long-press chart to inspect OHLC · Pinch to zoom</string>
+    <string name="chart_ohlcv_format">O %1$s  H %2$s  L %3$s  C %4$s  Vol %5$s</string>
+    <string name="equity_chart_empty">No equity snapshots recorded yet.</string>
+    <string name="equity_chart_peak">Peak %1$s</string>
+    <string name="equity_chart_low">Low %1$s</string>
+
+    <string name="career_level_1_name">Novice Trader</string>
+    <string name="career_level_2_name">Active Trader</string>
+    <string name="career_level_3_name">Professional Trader</string>
+    <string name="career_level_4_name">Fund Manager</string>
+    <string name="career_level_5_name">Hedge Fund</string>
+
+    <string name="term_tooltip_cd">Explain %1$s</string>
+    <string name="term_tooltip_close">Got It</string>
+
+    <string name="term_spread_title">Bid-Ask Spread</string>
+    <string name="term_spread_desc">The gap between the highest Bid (sell) price and lowest Ask (buy) price at a given tick. Entering via Market Order crosses the spread immediately.</string>
+    <string name="term_spread_tip">Practice tip: Liquid assets like BPAT or XVMG have tight spreads, while low-liquidity tokens like KPSW have wider spreads.</string>
+
+    <string name="term_slippage_title">Slippage</string>
+    <string name="term_slippage_desc">The extra price movement between your expected execution price and actual fill price when a large Market or Stop order absorbs available tick liquidity.</string>
+    <string name="term_slippage_tip">Practice tip: Split oversized orders or use Limit orders on thinner assets to keep slippage low.</string>
+
+    <string name="term_stop_loss_title">Stop-Loss (SL)</string>
+    <string name="term_stop_loss_desc">A pre-planned exit trigger that automatically closes your position if price moves against you, capping worst-case loss before emotions take over.</string>
+    <string name="term_stop_loss_tip">Practice tip: Place your Stop-Loss at a logical chart invalidation level, not randomly after already losing.</string>
+
+    <string name="term_oco_title">OCO Bracket (TP / SL)</string>
+    <string name="term_oco_desc">One-Cancels-the-Other pairs a Take-Profit limit order and a Stop-Loss order on the same position. When one fills, the other cancels automatically.</string>
+    <string name="term_oco_tip">Practice tip: Attaching OCO when opening a trade enforces your Risk/Reward plan from the very first tick.</string>
+
+    <string name="term_leverage_title">Leverage</string>
+    <string name="term_leverage_desc">A multiplier (e.g., 3x or 5x) allowing larger exposure with smaller locked margin. Both gains AND losses are multiplied equally, plus per-tick borrow fees.</string>
+    <string name="term_leverage_tip">Practice tip: High leverage amplifies minor noise into forced liquidation. Master 1x spot sizing first.</string>
+
+    <string name="term_margin_call_title">Margin Call &amp; Liquidation</string>
+    <string name="term_margin_call_desc">Margin Level = Equity / Leveraged Margin. At 110% or below you enter Margin Call; at 100% or below, losing leveraged positions are force-closed to protect solvency.</string>
+    <string name="term_margin_call_tip">Practice tip: Always pair leveraged or short trades with a Stop-Loss well above the liquidation price.</string>
+
+    <string name="term_drawdown_title">Max Drawdown</string>
+    <string name="term_drawdown_desc">The largest percentage drop from your portfolio\'s historical peak equity to a subsequent trough before recovering to a new peak.</string>
+    <string name="term_drawdown_tip">Practice tip: A 50% drawdown requires a +100% gain just to break even. Keeping max drawdown under 10–15% is crucial.</string>
+
+    <string name="term_risk_reward_title">Risk / Reward Ratio</string>
+    <string name="term_risk_reward_desc">Compares average profit on winning trades against average loss on losing trades. A 2.0 ratio means winners earn 2x what losers lose.</string>
+    <string name="term_risk_reward_tip">Practice tip: With a 1.5+ Risk/Reward ratio, you can stay profitable even with a 45% win rate.</string>
+
+    <string name="term_candle_title">Candlestick (OHLC)</string>
+    <string name="term_candle_desc">Each bar summarizes Open, High, Low, and Close within a timeframe. Long wicks show price rejection, while full bodies show strong directional control.</string>
+    <string name="term_candle_tip">Practice tip: Always read candles alongside the current Market Regime rather than trading a single bar blindly.</string>
+
+    <string name="term_sizing_title">1–2% Risk Sizing Rule</string>
+    <string name="term_sizing_desc">Never risk more than 1–2% of total account equity on a single trade\'s Stop-Loss distance: Units = (Equity × Risk%) / |Entry − StopLoss|.</string>
+    <string name="term_sizing_tip">Practice tip: Even 10 consecutive Stop-Loss hits at 1% risk still leave ~90% of your capital intact.</string>
+</resources>

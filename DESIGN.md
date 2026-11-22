@@ -19,7 +19,7 @@ Dokumen desain resmi untuk **Tradingin Aja**, disusun berdasarkan `SKILL.md` dan
 
 ## 2. Daftar Aset Fiktif Awal (10 Aset)
 
-Seluruh aset di bawah ini adalah **100% fiktif** (tidak memakai ticker, merek, atau entitas dunia nyata). Parameter volatilitas ($\sigma$) dan *drift* ($\mu$) dinyatakan dalam basis tahunan (*annualized*) untuk kebutuhan mesin harga deterministik, sedangkan biaya dasar transaksi mengacu pada `GameBalance.DEFAULT_TRADING_FEE_BPS` (`15 bps` / `0,15%`).
+Seluruh aset di bawah ini adalah **100% fiktif** (tidak memakai ticker, merek, atau entitas dunia nyata). Parameter volatilitas ($\sigma$) dan *drift* ($\mu$) dinyatakan dalam basis tahunan (*annualized*) untuk kebutuhan mesin harga deterministik, sedangkan biaya dasar transaksi mengacu pada `GameBalance.DEFAULT_TRADING_FEE_BPS` (`10 bps` / `0,10%`).
 
 | No | Kelas Aset | Sektor / Sub-kelas | Nama Aset Fiktif | Simbol | Harga Awal (`vRp`) | Volatilitas Dasar ($\sigma$) | Drift ($\mu$) | Model Harga Awal | Likuiditas & Spread Dasar | Jam Pasar |
 |---|---|---|---|---|---:|---:|---:|---|---|---|

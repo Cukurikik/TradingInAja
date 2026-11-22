@@ -62,7 +62,7 @@
     <string name="mission_win_rate">Maintain Win Rate &gt;= %1$.0f%%</string>
 
     <string name="lesson_basics_title">1. Bid-Ask Spread, Fees &amp; Stop-Loss</string>
-    <string name="lesson_basics_body">Every trade pays a bid-ask spread and simulation commission (15 bps). Always define your Stop-Loss exit BEFORE entering so a routine pullback never turns into an uncontrolled loss.</string>
+    <string name="lesson_basics_body">Every trade pays a bid-ask spread and simulation commission (10 bps). Always define your Stop-Loss exit BEFORE entering so a routine pullback never turns into an uncontrolled loss.</string>
     <string name="lesson_risk_title">2. The 1–2% Position Sizing Rule</string>
     <string name="lesson_risk_body">Risking 1–2% of equity per Stop-Loss means dividing your risk budget by |Entry − StopLoss|. Pairing Limit entries with OCO Take-Profit / Stop-Loss keeps Risk/Reward skewed in your favor.</string>
     <string name="lesson_candle_title">3. Reading Candles &amp; Market Regimes</string>

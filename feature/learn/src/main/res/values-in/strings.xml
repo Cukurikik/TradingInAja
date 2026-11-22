@@ -62,7 +62,7 @@
     <string name="mission_win_rate">Pertahankan Win Rate &gt;= %1$.0f%%</string>
 
     <string name="lesson_basics_title">1. Bid-Ask Spread, Komisi &amp; Stop-Loss</string>
-    <string name="lesson_basics_body">Setiap eksekusi menanggung selisih bid-ask dan komisi simulasi (15 bps). Selalu tentukan harga keluar Stop-Loss SEBELUM masuk agar koreksi wajar tidak membengkak jadi rugi besar.</string>
+    <string name="lesson_basics_body">Setiap eksekusi menanggung selisih bid-ask dan komisi simulasi (10 bps). Selalu tentukan harga keluar Stop-Loss SEBELUM masuk agar koreksi wajar tidak membengkak jadi rugi besar.</string>
     <string name="lesson_risk_title">2. Aturan Ukuran Posisi 1–2%</string>
     <string name="lesson_risk_body">Membatasi risiko Stop-Loss sebesar 1–2% ekuitas dilakukan dengan membagi anggaran risiko terhadap jarak |Entry − StopLoss|. Gabungkan Limit dengan bracket OCO agar Risk/Reward selalu terukur.</string>
     <string name="lesson_candle_title">3. Membaca Candle &amp; Rezim Pasar</string>

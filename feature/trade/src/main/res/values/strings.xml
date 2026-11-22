@@ -42,7 +42,7 @@
     <string name="trade_preview_required_margin">Required Initial Margin</string>
     <string name="trade_preview_borrow_daily">Est. Borrow Fee / Day (12%% p.a.)</string>
     <string name="trade_preview_liq_price">Est. Liquidation Price (100%% Margin)</string>
-    <string name="trade_preview_commission">Sim. Commission (15 bps)</string>
+    <string name="trade_preview_commission">Sim. Commission (10 bps)</string>
     <string name="trade_preview_net_impact">Net Cash Impact</string>
     <string name="trade_preview_projected_cash">Cash After Order</string>
     <string name="trade_preview_concentration">Post-Order Exposure</string>
@@ -78,4 +78,10 @@
     <string name="trade_career_competency_hint">Unlocks automatically via risk competency missions in Learn (or select below for sandbox testing):</string>
     <string name="trade_preview_sl_risk_pct">Stop-Loss Risk vs Equity</string>
     <string name="trade_warning_sl_risk_rule">Stop-Loss risk exceeds the 1–2% per-trade rule. Consider tighter sizing.</string>
+    <string name="trade_feedback_ack">Dismiss</string>
+    <string name="trade_confirm_summary">%1$s · %2$s unit (%3$s, %4$sx)</string>
+    <string name="trade_pending_title">%1$s %2$s %3$s (%4$s)</string>
+    <string name="trade_pending_price_limit">Limit: %1$s</string>
+    <string name="trade_pending_price_stop">Stop: %1$s</string>
+    <string name="trade_pending_price_stop_limit">Stop %1$s → Limit %2$s</string>
 </resources>

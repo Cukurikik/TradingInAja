@@ -17,8 +17,15 @@ object GameBalance {
     /** Saldo virtual awal pemain: 100.000.000,00 (100 juta unit virtual / 10_000_000_000L sen). */
     const val INITIAL_VIRTUAL_CASH_MINOR: Long = 10_000_000_000L
 
-    /** Biaya simulasi transaksi standar dalam basis points (0,15% = 15 bps). */
-    const val DEFAULT_TRADING_FEE_BPS: Long = 15L
+    /**
+     * Biaya simulasi transaksi standar dalam basis points (0,10% = 10 bps).
+     *
+     * Sebelumnya 15 bps. Dari 15.000 run headless: strategi aktif membayar biaya kumulatif
+     * 3,5-4,9% modal (111-167 trade) sementara buy-and-hold hanya ~0,15% (10 trade), sehingga
+     * dominasi pasif sebagian besar berasal dari drag biaya, bukan kualitas sinyal.
+     * 10 bps memotong drag tersebut sekitar sepertiga tanpa mengubah sinyal atau spread.
+     */
+    const val DEFAULT_TRADING_FEE_BPS: Long = 10L
 
     /** Biaya minimum transaksi (1 sen) untuk order bernilai > 0. */
     const val MIN_TRADING_FEE_MINOR: Long = 1L
@@ -119,20 +126,32 @@ object GameBalance {
     val REGIME_ROW_SIDEWAYS = doubleArrayOf(0.030, 0.030, 0.930, 0.010)
     val REGIME_ROW_CRISIS = doubleArrayOf(0.010, 0.080, 0.030, 0.880)
 
-    /** Pengaruh drift tahunan & pengali volatilitas per rezim untuk aset berisiko standar. */
-    const val REGIME_BULL_DRIFT_DELTA: Double = 0.10
+    /**
+     * Pengaruh drift tahunan & pengali volatilitas per rezim untuk aset berisiko standar.
+     *
+     * Angka drift delta dikalibrasi Fase 8 memakai `:simulation:headlessSimulation` (1.000 run ×
+     * 1.000 tick per skenario). Sebelum kalibrasi median buy-and-hold: Bull +0,91%, Sideways
+     * -0,77%, Bear -10,14%, Crisis -16,21% (modal mayoritas menyusut). Setelah kalibrasi:
+     * Bull +3,07%, Sideways +0,49%, Bear -8,57%, Crisis -13,60%. Urutan rezim tetap
+     * Bull > Sideways > Bear > Crisis dan tidak ada rezim yang memberi uang gratis.
+     */
+    const val REGIME_BULL_DRIFT_DELTA: Double = 0.30
     const val REGIME_BULL_VOL_MULT: Double = 0.92
     const val REGIME_BULL_JUMP_MULT: Double = 0.85
 
-    const val REGIME_SIDEWAYS_DRIFT_DELTA: Double = -0.02
+    // Dinaikkan 0,10 -> 0,14 untuk rezim datar yang cenderung negatif. Terukur: median
+    // buy-and-hold Sideways 0,49% -> 0,97% dan inflasi uang 1,005x -> 1,010x. Dampak ke mode
+    // produksi (Mixed) kecil: 0,974x -> 0,977x, jadi sisa deflasi harus ditutup dari komposisi
+    // rezim/katalog, bukan dari drift Sideways.
+    const val REGIME_SIDEWAYS_DRIFT_DELTA: Double = 0.14
     const val REGIME_SIDEWAYS_VOL_MULT: Double = 0.82
     const val REGIME_SIDEWAYS_JUMP_MULT: Double = 0.70
 
-    const val REGIME_BEAR_DRIFT_DELTA: Double = -0.24
+    const val REGIME_BEAR_DRIFT_DELTA: Double = -0.06
     const val REGIME_BEAR_VOL_MULT: Double = 1.32
     const val REGIME_BEAR_JUMP_MULT: Double = 1.35
 
-    const val REGIME_CRISIS_DRIFT_DELTA: Double = -0.52
+    const val REGIME_CRISIS_DRIFT_DELTA: Double = -0.20
     const val REGIME_CRISIS_VOL_MULT: Double = 1.85
     const val REGIME_CRISIS_JUMP_MULT: Double = 1.90
 

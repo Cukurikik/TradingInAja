@@ -234,12 +234,14 @@ object MarketEngine {
         val correlatedShocks = CholeskyDecomposition.correlate(state.lowerCholesky, independentNormals)
         val updatedAssets = state.assetStates.mapIndexed { index, assetState ->
             val garchVol = nextGarchBaseVol(assetState)
+            // Modifier rezim aktif harus selalu berlaku: `enableRegimeSwitching` hanya mengatur
+            // transisi Markov, bukan apakah rezim saat ini memengaruhi drift/volatilitas aset.
             val effectiveParams = EventEngine.combineAssetParameters(
                 spec = assetState.spec,
                 regime = nextRegime,
                 activeEvents = eventOutcome.activeEvents,
                 baseAnnualVolatility = garchVol,
-                applyRegimeModifiers = state.enableRegimeSwitching
+                applyRegimeModifiers = true
             )
             stepWithShock(
                 state = assetState,

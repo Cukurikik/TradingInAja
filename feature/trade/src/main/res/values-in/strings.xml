@@ -42,7 +42,7 @@
     <string name="trade_preview_required_margin">Margin Awal Dibutuhkan</string>
     <string name="trade_preview_borrow_daily">Est. Biaya Pinjam / Hari (12%% p.a.)</string>
     <string name="trade_preview_liq_price">Est. Harga Likuidasi (Margin 100%%)</string>
-    <string name="trade_preview_commission">Komisi Simulasi (15 bps)</string>
+    <string name="trade_preview_commission">Komisi Simulasi (10 bps)</string>
     <string name="trade_preview_net_impact">Dampak Kas Bersih</string>
     <string name="trade_preview_projected_cash">Sisa Saldo Setelah Order</string>
     <string name="trade_preview_concentration">Eksposur Setelah Order</string>
@@ -78,4 +78,10 @@
     <string name="trade_career_competency_hint">Naik otomatis lewat misi kompetensi di tab Belajar (atau pilih di bawah untuk uji sandbox):</string>
     <string name="trade_preview_sl_risk_pct">Risiko Stop-Loss vs Ekuitas</string>
     <string name="trade_warning_sl_risk_rule">Risiko Stop-Loss melebihi aturan 1–2% per trade. Pertimbangkan unit lebih kecil.</string>
+    <string name="trade_feedback_ack">Tutup</string>
+    <string name="trade_confirm_summary">%1$s · %2$s unit (%3$s, %4$sx)</string>
+    <string name="trade_pending_title">%1$s %2$s %3$s (%4$s)</string>
+    <string name="trade_pending_price_limit">Limit: %1$s</string>
+    <string name="trade_pending_price_stop">Stop: %1$s</string>
+    <string name="trade_pending_price_stop_limit">Stop %1$s → Limit %2$s</string>
 </resources>

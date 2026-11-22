@@ -17,6 +17,7 @@
     <string name="market_empty_watchlist">Your watchlist is empty. Tap the star icon on any asset to pin it here.</string>
     <string name="market_watchlist_add">Add %1$s to watchlist</string>
     <string name="market_watchlist_remove">Remove %1$s from watchlist</string>
+    <string name="market_open_asset">Open details for %1$s</string>
     <string name="market_back_to_list">Back to market list</string>
     <string name="market_loading">Initializing market simulation…</string>
     <string name="market_stat_bid">Bid</string>

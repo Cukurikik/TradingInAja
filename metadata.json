@@ -2,5 +2,5 @@
   "name": "Tradingin Aja",
   "description": "Game simulasi trading offline-first dengan pasar fiktif dan uang virtual untuk edukasi.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

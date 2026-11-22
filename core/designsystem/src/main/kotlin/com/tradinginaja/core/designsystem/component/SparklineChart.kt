@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.unit.dp
 import com.tradinginaja.core.designsystem.theme.TradingTheme
 
@@ -44,6 +45,8 @@ fun SparklineChart(prices: List<Double>, isPositive: Boolean, modifier: Modifier
         modifier = modifier
             .width(76.dp)
             .height(34.dp)
+            // Graf dekoratif: arah tren sudah dibacakan oleh teks harga & persentase di kartu aset.
+            .clearAndSetSemantics {}
             .testTag("sparkline_chart")
     ) {
         if (prices.size < 2) {

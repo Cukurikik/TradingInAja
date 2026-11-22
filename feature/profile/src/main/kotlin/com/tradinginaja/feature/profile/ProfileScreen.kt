@@ -187,6 +187,8 @@ private fun ThemeModeRow(mode: ThemeMode, selected: Boolean, onSelect: () -> Uni
         ThemeMode.LIGHT -> stringResource(R.string.theme_mode_light)
         ThemeMode.DARK -> stringResource(R.string.theme_mode_dark)
         ThemeMode.AMOLED -> stringResource(R.string.theme_mode_amoled)
+        ThemeMode.COLOR_BLIND_LIGHT -> stringResource(R.string.theme_mode_color_blind_light)
+        ThemeMode.COLOR_BLIND_DARK -> stringResource(R.string.theme_mode_color_blind_dark)
     }
 
     Row(

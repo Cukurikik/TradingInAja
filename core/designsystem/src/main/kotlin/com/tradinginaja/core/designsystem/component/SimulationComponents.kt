@@ -121,7 +121,8 @@ fun FeaturePlaceholderLayout(
                         ) {
                             Icon(
                                 imageVector = icon,
-                                contentDescription = title,
+                                // Dekoratif: judul kartu di bawahnya sudah dibacakan TalkBack.
+                                contentDescription = null,
                                 tint = MaterialTheme.colorScheme.primary,
                                 modifier = Modifier
                                     .padding(12.dp)

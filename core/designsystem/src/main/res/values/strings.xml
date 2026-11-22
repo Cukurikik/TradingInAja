@@ -4,9 +4,11 @@
     <string name="chart_reset_view">Live</string>
     <string name="chart_crosshair_hint">Tap or long-press chart to inspect OHLC · Pinch to zoom</string>
     <string name="chart_ohlcv_format">O %1$s  H %2$s  L %3$s  C %4$s  Vol %5$s</string>
+    <string name="chart_a11y_summary">Candlestick chart. Last close %1$s, change %2$s, high %3$s, low %4$s. Tap or long-press the chart to inspect candles, pinch to zoom.</string>
     <string name="equity_chart_empty">No equity snapshots recorded yet.</string>
     <string name="equity_chart_peak">Peak %1$s</string>
     <string name="equity_chart_low">Low %1$s</string>
+    <string name="equity_chart_a11y_summary">Equity curve. Latest equity %1$s, peak %2$s, low %3$s.</string>
 
     <string name="career_level_1_name">Novice Trader</string>
     <string name="career_level_2_name">Active Trader</string>

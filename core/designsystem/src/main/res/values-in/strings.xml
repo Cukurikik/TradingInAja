@@ -4,9 +4,11 @@
     <string name="chart_reset_view">Terkini</string>
     <string name="chart_crosshair_hint">Ketuk atau tekan-tahan grafik untuk inspeksi OHLC · Cubit untuk zoom</string>
     <string name="chart_ohlcv_format">O %1$s  H %2$s  L %3$s  C %4$s  Vol %5$s</string>
+    <string name="chart_a11y_summary">Grafik candlestick. Penutupan terakhir %1$s, perubahan %2$s, tertinggi %3$s, terendah %4$s. Ketuk atau tahan grafik untuk memeriksa candle, cubit untuk zoom.</string>
     <string name="equity_chart_empty">Belum ada riwayat ekuitas yang tercatat.</string>
     <string name="equity_chart_peak">Puncak %1$s</string>
     <string name="equity_chart_low">Terendah %1$s</string>
+    <string name="equity_chart_a11y_summary">Kurva ekuitas. Ekuitas terkini %1$s, puncak %2$s, terendah %3$s.</string>
 
     <string name="career_level_1_name">Trader Pemula</string>
     <string name="career_level_2_name">Trader Aktif</string>

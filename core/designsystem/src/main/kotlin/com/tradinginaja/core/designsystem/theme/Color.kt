@@ -54,6 +54,18 @@ val DarkOnSurfaceVariant = Color(0xFF94A3B8)
 val DarkOutline = Color(0xFF334155)
 val DarkOutlineVariant = Color(0xFF1E293B)
 
+// Palet ramah buta warna (Okabe–Ito biru/oranye). Arah naik-turun tetap terbaca pada
+// deuteranopia/protanopia; kontras teks >= 4,5:1 terhadap surface tema masing-masing.
+val ColorBlindBullishLight = Color(0xFF0072B2)
+val ColorBlindBullishContainerLight = Color(0xFFD4E9F7)
+val ColorBlindBearishLight = Color(0xFFB34700)
+val ColorBlindBearishContainerLight = Color(0xFFFCE3CD)
+
+val ColorBlindBullishDark = Color(0xFF56B4E9)
+val ColorBlindBullishContainerDark = Color(0xFF0B3448)
+val ColorBlindBearishDark = Color(0xFFF0A030)
+val ColorBlindBearishContainerDark = Color(0xFF4A2A00)
+
 // AMOLED Theme (Pure #000000 Black Surface)
 val AmoledBackground = Color(0xFF000000)
 val AmoledSurface = Color(0xFF000000)

@@ -35,6 +35,8 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.rememberTextMeasurer
@@ -120,6 +122,21 @@ fun CandlestickChart(
             color = colorScheme.onPrimary
         )
     }
+    val accessibilitySummary = if (renderedCandles.isEmpty()) {
+        stringResource(R.string.chart_empty_state)
+    } else {
+        val first = renderedCandles.first()
+        val last = renderedCandles.last()
+        val changePct = if (first.open != 0.0) (last.close - first.open) / first.open * 100.0 else 0.0
+        stringResource(
+            R.string.chart_a11y_summary,
+            formatCompactPrice(last.close),
+            String.format(java.util.Locale.US, "%+.2f%%", changePct),
+            formatCompactPrice(renderedCandles.maxOf { it.high }),
+            formatCompactPrice(renderedCandles.minOf { it.low })
+        )
+    }
+
     val palette = remember(tradingColors, colorScheme) {
         ChartPalette(
             bullish = tradingColors.bullish,
@@ -135,6 +152,7 @@ fun CandlestickChart(
         modifier = modifier
             .fillMaxWidth()
             .height(290.dp)
+            .semantics { contentDescription = accessibilitySummary }
             .testTag("candlestick_chart"),
         shape = MaterialTheme.shapes.medium,
         color = colorScheme.surfaceContainerLowest,

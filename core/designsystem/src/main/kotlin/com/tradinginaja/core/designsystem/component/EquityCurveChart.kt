@@ -27,6 +27,8 @@ import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.tradinginaja.core.common.Money
 import com.tradinginaja.core.designsystem.R
@@ -80,10 +82,22 @@ fun EquityCurveChart(points: List<EquityPoint>, baselineEquity: Money, modifier:
     val fillPath = remember { Path() }
     val dashEffect = remember { PathEffect.dashPathEffect(floatArrayOf(DASH_INTERVAL_PX, DASH_INTERVAL_PX), 0f) }
 
+    val accessibilitySummary = if (sampled.isEmpty()) {
+        stringResource(R.string.equity_chart_empty)
+    } else {
+        stringResource(
+            R.string.equity_chart_a11y_summary,
+            latestEquity.formatDisplay(),
+            Money(maxEquity).formatDisplay(),
+            Money(minEquity).formatDisplay()
+        )
+    }
+
     Surface(
         modifier = modifier
             .fillMaxWidth()
             .height(210.dp)
+            .semantics { contentDescription = accessibilitySummary }
             .testTag("equity_curve_chart"),
         shape = MaterialTheme.shapes.medium,
         color = colorScheme.surfaceContainerLowest,

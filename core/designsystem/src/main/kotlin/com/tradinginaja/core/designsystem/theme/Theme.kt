@@ -65,6 +65,48 @@ private val AmoledExtendedColors = TradingExtendedColors(
     isAmoled = true
 )
 
+private val ColorBlindLightExtendedColors = TradingExtendedColors(
+    bullish = ColorBlindBullishLight,
+    onBullish = Color.White,
+    bullishContainer = ColorBlindBullishContainerLight,
+    bearish = ColorBlindBearishLight,
+    onBearish = Color.White,
+    bearishContainer = ColorBlindBearishContainerLight,
+    warning = AmberLight,
+    cardBorder = LightOutlineVariant,
+    isAmoled = false
+)
+
+private val ColorBlindDarkExtendedColors = TradingExtendedColors(
+    bullish = ColorBlindBullishDark,
+    onBullish = Color(0xFF00293D),
+    bullishContainer = ColorBlindBullishContainerDark,
+    bearish = ColorBlindBearishDark,
+    onBearish = Color(0xFF3A1D00),
+    bearishContainer = ColorBlindBearishContainerDark,
+    warning = AmberDark,
+    cardBorder = DarkOutlineVariant,
+    isAmoled = false
+)
+
+private val TradingColorBlindLightColorScheme = TradingLightColorScheme.copy(
+    primary = ColorBlindBullishLight,
+    primaryContainer = ColorBlindBullishContainerLight,
+    onPrimaryContainer = ColorBlindBullishLight,
+    error = ColorBlindBearishLight,
+    errorContainer = ColorBlindBearishContainerLight,
+    onErrorContainer = ColorBlindBearishLight
+)
+
+private val TradingColorBlindDarkColorScheme = TradingDarkColorScheme.copy(
+    primary = ColorBlindBullishDark,
+    primaryContainer = ColorBlindBullishContainerDark,
+    onPrimaryContainer = ColorBlindBullishDark,
+    error = ColorBlindBearishDark,
+    errorContainer = ColorBlindBearishContainerDark,
+    onErrorContainer = ColorBlindBearishDark
+)
+
 val LocalTradingColors = staticCompositionLocalOf { DarkExtendedColors }
 
 object TradingTheme {
@@ -82,12 +124,15 @@ fun TradingTheme(
     val systemDark = isSystemInDarkTheme()
     val useDark = when (themeMode) {
         ThemeMode.SYSTEM -> systemDark
-        ThemeMode.LIGHT -> false
-        ThemeMode.DARK, ThemeMode.AMOLED -> true
+        ThemeMode.LIGHT, ThemeMode.COLOR_BLIND_LIGHT -> false
+        ThemeMode.DARK, ThemeMode.AMOLED, ThemeMode.COLOR_BLIND_DARK -> true
     }
     val useAmoled = themeMode == ThemeMode.AMOLED
+    val useColorBlind = themeMode == ThemeMode.COLOR_BLIND_LIGHT || themeMode == ThemeMode.COLOR_BLIND_DARK
 
     val colorScheme = when {
+        useColorBlind && useDark -> TradingColorBlindDarkColorScheme
+        useColorBlind -> TradingColorBlindLightColorScheme
         useAmoled -> TradingAmoledColorScheme
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
@@ -98,6 +143,8 @@ fun TradingTheme(
     }
 
     val extendedColors = when {
+        useColorBlind && useDark -> ColorBlindDarkExtendedColors
+        useColorBlind -> ColorBlindLightExtendedColors
         useAmoled -> AmoledExtendedColors
         useDark -> DarkExtendedColors
         else -> LightExtendedColors

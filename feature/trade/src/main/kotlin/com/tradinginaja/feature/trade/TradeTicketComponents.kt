@@ -202,8 +202,13 @@ internal fun OrderConfirmationDialog(state: TradeUiState.Ready, onConfirm: () ->
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 Text(
-                    text = "${state.selectedSpec.symbol} · ${state.quantityInput} unit " +
-                        "(${state.orderType.name}, ${state.leverage}x)",
+                    text = stringResource(
+                        R.string.trade_confirm_summary,
+                        state.selectedSpec.symbol,
+                        state.quantityInput,
+                        orderTypeLabel(state.orderType),
+                        state.leverage
+                    ),
                     style = MaterialTheme.typography.titleSmall
                 )
                 PreviewRow(
@@ -274,10 +279,19 @@ internal fun PendingOrderCard(order: Order, onCancel: (String) -> Unit) {
     val isBuy = order.side == OrderSide.BUY
     val sideColor = if (isBuy) TradingTheme.colors.bullish else TradingTheme.colors.bearish
     val priceSummary = when (order.type) {
-        OrderType.LIMIT -> "Limit: ${(order.limitPrice ?: order.reservedCash).formatDisplay()}"
-        OrderType.STOP_MARKET -> "Stop: ${(order.triggerPrice ?: order.reservedCash).formatDisplay()}"
-        OrderType.STOP_LIMIT ->
-            "Stop ${(order.triggerPrice ?: order.reservedCash).formatDisplay()} -> Limit ${(order.limitPrice ?: order.reservedCash).formatDisplay()}"
+        OrderType.LIMIT -> stringResource(
+            R.string.trade_pending_price_limit,
+            (order.limitPrice ?: order.reservedCash).formatDisplay()
+        )
+        OrderType.STOP_MARKET -> stringResource(
+            R.string.trade_pending_price_stop,
+            (order.triggerPrice ?: order.reservedCash).formatDisplay()
+        )
+        OrderType.STOP_LIMIT -> stringResource(
+            R.string.trade_pending_price_stop_limit,
+            (order.triggerPrice ?: order.reservedCash).formatDisplay(),
+            (order.limitPrice ?: order.reservedCash).formatDisplay()
+        )
         OrderType.MARKET -> ""
     }
     val ocoSuffix = if (order.ocoGroupId != null) {
@@ -306,7 +320,13 @@ internal fun PendingOrderCard(order: Order, onCancel: (String) -> Unit) {
                 verticalArrangement = Arrangement.spacedBy(2.dp)
             ) {
                 Text(
-                    text = "${order.side.name} ${order.quantity} ${order.symbol} (${order.type.name}$ocoSuffix)",
+                    text = stringResource(
+                        R.string.trade_pending_title,
+                        orderSideLabel(order.side),
+                        order.quantity.toString(),
+                        order.symbol,
+                        orderTypeLabel(order.type) + ocoSuffix
+                    ),
                     style = MaterialTheme.typography.titleSmall,
                     color = sideColor,
                     fontWeight = FontWeight.Bold
@@ -399,4 +419,19 @@ internal fun rejectReasonText(reason: OrderRejectReason): String = when (reason)
     OrderRejectReason.INSUFFICIENT_CASH -> stringResource(R.string.trade_error_insufficient_cash)
     OrderRejectReason.INSUFFICIENT_POSITION -> stringResource(R.string.trade_error_insufficient_position)
     OrderRejectReason.UNKNOWN_ASSET -> stringResource(R.string.trade_error_unknown_asset)
+}
+
+/** Label lokal untuk [OrderSide]; nama enum mentah tidak boleh tampil di UI. */
+@Composable
+internal fun orderSideLabel(side: OrderSide): String = stringResource(
+    if (side == OrderSide.BUY) R.string.trade_side_buy else R.string.trade_side_sell
+)
+
+/** Label lokal untuk [OrderType]; nama enum mentah tidak boleh tampil di UI. */
+@Composable
+internal fun orderTypeLabel(type: OrderType): String = when (type) {
+    OrderType.MARKET -> stringResource(R.string.trade_type_market)
+    OrderType.LIMIT -> stringResource(R.string.trade_type_limit)
+    OrderType.STOP_MARKET -> stringResource(R.string.trade_type_stop)
+    OrderType.STOP_LIMIT -> stringResource(R.string.trade_type_stop_limit)
 }

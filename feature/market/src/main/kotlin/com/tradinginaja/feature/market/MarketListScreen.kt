@@ -340,7 +340,10 @@ private fun MarketAssetCard(item: MarketAssetRowItem, onClick: () -> Unit, onTog
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable(onClick = onClick)
+            .clickable(
+                onClickLabel = stringResource(R.string.market_open_asset, item.spec.symbol),
+                onClick = onClick
+            )
             .testTag("market_asset_card_${item.spec.symbol}"),
         shape = MaterialTheme.shapes.medium,
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer),

@@ -17,6 +17,7 @@
     <string name="market_empty_watchlist">Watchlist masih kosong. Ketuk ikon bintang pada aset untuk menandainya.</string>
     <string name="market_watchlist_add">Tambah %1$s ke watchlist</string>
     <string name="market_watchlist_remove">Hapus %1$s dari watchlist</string>
+    <string name="market_open_asset">Buka detail %1$s</string>
     <string name="market_back_to_list">Kembali ke daftar pasar</string>
     <string name="market_loading">Memuat simulasi pasar…</string>
     <string name="market_stat_bid">Bid</string>

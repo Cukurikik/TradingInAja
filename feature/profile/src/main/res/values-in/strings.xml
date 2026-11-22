@@ -11,4 +11,6 @@
     <string name="theme_mode_light">Terang</string>
     <string name="theme_mode_dark">Gelap (Slate)</string>
     <string name="theme_mode_amoled">AMOLED Hitam Murni</string>
+    <string name="theme_mode_color_blind_light">Ramah Buta Warna (Terang)</string>
+    <string name="theme_mode_color_blind_dark">Ramah Buta Warna (Gelap)</string>
 </resources>

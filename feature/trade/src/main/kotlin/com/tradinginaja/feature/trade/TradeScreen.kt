@@ -463,17 +463,17 @@ private fun FeedbackBanner(feedback: TradeFeedback, onDismiss: () -> Unit) {
     val message = when (feedback) {
         is TradeFeedback.Executed -> stringResource(
             R.string.trade_feedback_executed,
-            feedback.side.name,
+            orderSideLabel(feedback.side),
             feedback.quantity,
             feedback.symbol,
             feedback.price.formatDisplay()
         )
         is TradeFeedback.PlacedPending -> stringResource(
             R.string.trade_feedback_pending,
-            feedback.side.name,
+            orderSideLabel(feedback.side),
             feedback.quantity,
             feedback.symbol,
-            feedback.orderType.name
+            orderTypeLabel(feedback.orderType)
         )
         TradeFeedback.DuplicateIgnored -> stringResource(R.string.trade_feedback_duplicate)
         is TradeFeedback.Rejected -> stringResource(
@@ -511,7 +511,7 @@ private fun FeedbackBanner(feedback: TradeFeedback, onDismiss: () -> Unit) {
                 onClick = onDismiss,
                 modifier = Modifier.minimumInteractiveComponentSize()
             ) {
-                Text("OK")
+                Text(text = stringResource(R.string.trade_feedback_ack))
             }
         }
     }

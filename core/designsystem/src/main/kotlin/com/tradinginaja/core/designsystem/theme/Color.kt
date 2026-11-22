@@ -66,6 +66,14 @@ val ColorBlindBullishContainerDark = Color(0xFF0B3448)
 val ColorBlindBearishDark = Color(0xFFF0A030)
 val ColorBlindBearishContainerDark = Color(0xFF4A2A00)
 
+// Pasangan on*Container dipilih agar >= 4,5:1 terhadap container-nya (WCAG AA teks normal):
+// #00395C pada #D4E9F7 = 9,66:1; #6B2A00 pada #FCE3CD = 8,69:1;
+// #BFE4F7 pada #0B3448 = 9,79:1; #FFDDB6 pada #4A2A00 = 10,03:1.
+val ColorBlindOnBullishContainerLight = Color(0xFF00395C)
+val ColorBlindOnBearishContainerLight = Color(0xFF6B2A00)
+val ColorBlindOnBullishContainerDark = Color(0xFFBFE4F7)
+val ColorBlindOnBearishContainerDark = Color(0xFFFFDDB6)
+
 // AMOLED Theme (Pure #000000 Black Surface)
 val AmoledBackground = Color(0xFF000000)
 val AmoledSurface = Color(0xFF000000)

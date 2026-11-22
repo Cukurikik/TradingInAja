@@ -92,19 +92,19 @@ private val ColorBlindDarkExtendedColors = TradingExtendedColors(
 private val TradingColorBlindLightColorScheme = TradingLightColorScheme.copy(
     primary = ColorBlindBullishLight,
     primaryContainer = ColorBlindBullishContainerLight,
-    onPrimaryContainer = ColorBlindBullishLight,
+    onPrimaryContainer = ColorBlindOnBullishContainerLight,
     error = ColorBlindBearishLight,
     errorContainer = ColorBlindBearishContainerLight,
-    onErrorContainer = ColorBlindBearishLight
+    onErrorContainer = ColorBlindOnBearishContainerLight
 )
 
 private val TradingColorBlindDarkColorScheme = TradingDarkColorScheme.copy(
     primary = ColorBlindBullishDark,
     primaryContainer = ColorBlindBullishContainerDark,
-    onPrimaryContainer = ColorBlindBullishDark,
+    onPrimaryContainer = ColorBlindOnBullishContainerDark,
     error = ColorBlindBearishDark,
     errorContainer = ColorBlindBearishContainerDark,
-    onErrorContainer = ColorBlindBearishDark
+    onErrorContainer = ColorBlindOnBearishContainerDark
 )
 
 val LocalTradingColors = staticCompositionLocalOf { DarkExtendedColors }
